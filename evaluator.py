@@ -8,7 +8,7 @@ import traceback
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 st.set_page_config(layout="wide")
 
-set_Criteria = getCriteria()
+list_Criteria = getCriteria()
 
 
 
@@ -97,11 +97,11 @@ if "messages" not in st.session_state:
 
 with col2:
     st.header("Validation Criteria")
-    option = st.selectbox("Select one criteria to validate?", set_Criteria, index=None)
+    option = st.multiselect("Select one criteria to validate?", max_selections=1, placeholder="Choose a Criteria",
+                            options=getCriteria())
 
-    st.write("You selected:", option)
-
-    st.write(f"Prompt selected: {getPrompt_text(option)}")
+    if len(option) >0:
+        st.write(f"Prompt selected: {getPrompt_text(option[0])}")
 
     # st.write("All prompts passed to XML appear here")
 
