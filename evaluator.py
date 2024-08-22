@@ -2,10 +2,15 @@ import streamlit as st
 
 import numpy as np
 from openai import OpenAI
+from utils import getCriteria, getPrompt_text
 import traceback
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 st.set_page_config(layout="wide")
+
+set_Criteria = getCriteria()
+
+
 
 intentional_elements_keys = ['Actors', 'Goals', 'Goals_Tasks', 'Softgoals', 'Softgoals_Tasks', 'Resources']
 exampleuserstorytext_1 = f""" The objective of Traffic Simulator is to generate cars and the simulator should also focus on 
@@ -68,15 +73,15 @@ with st.sidebar:
     </style>""", unsafe_allow_html=True)
 
 with col1:
-    custom_css = '''
-       <style>
-           textarea {
-               width: 2000px !important;
-           }
-       </style>
-       '''
-
-    st.write(custom_css, unsafe_allow_html=True)
+    # custom_css = '''
+    #    <style>
+    #        textarea {
+    #            width: 2000px !important;
+    #        }
+    #    </style>
+    #    '''
+    #
+    # st.write(custom_css, unsafe_allow_html=True)
     st.header("Goal Model")
     st.text_area("Enter Goal Model XML", value="", max_chars=None, key=None,
                  help=None, on_change=None, args=None,
@@ -91,8 +96,14 @@ if "messages" not in st.session_state:
     st.session_state.index_key = 0
 
 with col2:
-    st.header("Prompt to LLM")
-    st.write("All prompts passed to XML appear here")
+    st.header("Validation Criteria")
+    option = st.selectbox("Select one criteria to validate?", set_Criteria, index=None)
+
+    st.write("You selected:", option)
+
+    st.write(f"Prompt selected: {getPrompt_text(option)}")
+
+    # st.write("All prompts passed to XML appear here")
 
     for message in st.session_state.messages[1:]:
         if message["role"] != "system":
