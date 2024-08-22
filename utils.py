@@ -8,10 +8,10 @@ def getCriteria() -> list:
 
 
 def getPrompt_text(query_prompt: str) -> str:
-    print(query_prompt.lower())
+    # print(query_prompt.lower())
     try:
-        print(dict_criteriaprompts[query_prompt.lower()])
-        return dict_criteriaprompts[query_prompt.lower()]
+        #print(dict_criteriaprompts[query_prompt.lower()])
+        return dict_criteriaprompts[query_prompt.lower().strip()]
     except:
         print("no text")
         return ""
