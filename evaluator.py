@@ -4,13 +4,17 @@ import numpy as np
 from openai import OpenAI
 from utils import getCriteria, getPrompt_text
 import traceback
+import re
+
+
+def click_button():
+    st.session_state.xml_input = ""
+
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 st.set_page_config(layout="wide")
 
 list_Criteria = getCriteria()
-
-
 
 intentional_elements_keys = ['Actors', 'Goals', 'Goals_Tasks', 'Softgoals', 'Softgoals_Tasks', 'Resources']
 exampleuserstorytext_1 = f""" The objective of Traffic Simulator is to generate cars and the simulator should also focus on 
@@ -46,7 +50,7 @@ An engineer is working on the below set of user stories:
 He created an initial goal model with the following elements:
 """
 
-st.header('Semantic Validation of Goal Model using GPT-4', divider='rainbow')
+st.header('Semantic Validation of GRL Goal Model using GPT-4', divider='rainbow')
 
 col1, col2 = st.columns([1, 2], gap='medium')
 
@@ -83,9 +87,10 @@ with col1:
     #
     # st.write(custom_css, unsafe_allow_html=True)
     st.header("Goal Model")
-    st.text_area("Enter Goal Model XML", value="", max_chars=None, key=None,
-                 help=None, on_change=None, args=None,
-                 placeholder=None, disabled=False, height = 800, label_visibility="visible")
+    xmloutput = st.text_area("Enter Goal Model XML", value="", max_chars=None,
+                             help=None, on_change=None, args=None, key = "xml_input",
+                             placeholder=None, disabled=False, height=800, label_visibility="visible")
+    st.button('Clear', on_click=click_button)
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-4"
@@ -100,17 +105,25 @@ with col2:
     option = st.multiselect("Select one criteria to validate?", max_selections=1, placeholder="Choose a Criteria",
                             options=getCriteria())
 
-    if len(option) >0:
-        st.write(f"Prompt selected: {getPrompt_text(option[0])}")
+    complete_prompt = ""
+    print(len(xmloutput))
+    print(len(option))
 
-    # st.write("All prompts passed to XML appear here")
+    if len(option) > 0:
+        st.write(f"Prompt selected: {getPrompt_text(option[0])}")
+        prompt_part1 = getPrompt_text(option[0])
+        prompt_part2 = "```" + xmloutput + "```"
+
+        complete_prompt = prompt_part1 + prompt_part2
+
+    print(complete_prompt)
 
     for message in st.session_state.messages[1:]:
         if message["role"] != "system":
             with st.chat_message(message["role"]):
-                st.markdown(message["content"])
+                st.markdown(re.sub('```(.*?)```', '', message["content"],  flags=re.DOTALL))
 
-    if prompt := st.chat_input("What is up?"):
+    if complete_prompt != "":
         # create a markdown-formatted message that asks GPT to explain the function, formatted as a bullet list
         explain_system_message = {
             "role": "system",
@@ -118,9 +131,9 @@ with col2:
         }
         st.session_state.messages.append(explain_system_message)
 
-        st.session_state.messages.append({"role": "user", "content": prompt})
+        st.session_state.messages.append({"role": "user", "content": complete_prompt})
         with st.chat_message("user"):
-            st.markdown(prompt)
+            st.markdown(prompt_part1)
 
         with st.chat_message("assistant"):
             stream = client.chat.completions.create(
@@ -134,10 +147,10 @@ with col2:
             )
             response = st.write_stream(stream)
             # print(response)
-            try:
-                st.session_state.intentional_elements[intentional_elements_keys[st.session_state.index_key]] = response
-                st.session_state.index_key += 1
-            except Exception as e:
-                print(f'caught {type(e)}: e')
+            # try:
+            #     st.session_state.intentional_elements[intentional_elements_keys[st.session_state.index_key]] = response
+            #     st.session_state.index_key += 1
+            # except Exception as e:
+            #     print(f'caught {type(e)}: e')
 
             st.session_state.messages.append({"role": "assistant", "content": response})
