@@ -5,17 +5,16 @@ import openai
 
 dict_criteriaprompts = {"duplicate names of intentional elements": "In the XML enclosed using triple back ticks, do "
                                                                    "you see duplicate values for"
-                                                                   "'name' attribute? Answer using yes or no only. ",
+                                                                   "'name' attribute? Answer using yes or no only. Do not include any explanation.",
 
                         "duplicate identifiers of intentional elements": "In the XML enclosed using triple back ticks,"
                                                                          " do you see duplicate "
                                                                          "values for"
-                                                                         "'id' attribute? Answer using yes or no "
-                                                                         "only. ",
+                                                                         "'id' attribute? Answer using yes or no only. Do not include any explanation.",
 
                         "empty intentional element": "In the XML enclosed using triple back ticks, "
                                                      "do you see empty string as a value for "
-                                                     "'name' attribute? Answer using yes or no only. ",
+                                                     "'name' attribute? Answer using yes or no only. Do not include any explanation.",
 
                         "compare model modified and created dates": "In the XML enclosed using triple back ticks, "
                                                                     "if you see the attributes 'modified' and "
@@ -24,83 +23,83 @@ dict_criteriaprompts = {"duplicate names of intentional elements": "In the XML e
                                                                     "'modified' attribute greater than the value of "
                                                                     "'created' attribute?  Answer Yes, or No if the "
                                                                     "attributes 'modified' and 'created' are present. "
-                                                                    "Otherwise answer Not Applicable",
+                                                                    "Otherwise answer Not Applicable. Do not include any explanation.",
 
                         "empty goal model": "In the XML enclosed using triple back ticks, do you see that the element "
-                                            "named 'grl-catalog' is empty? Yes or No?",
+                                            "named 'grl-catalog' is empty? Answer yes or no only. Do not include any explanation.",
 
-                        "intentional elements contained outside GRLspec": "In the XML enclosed using triple back "
+                        "intentional elements contained outside grlspec": "In the XML enclosed using triple back "
                                                                           "ticks, do you see any content outside of "
-                                                                          "the section named 'grl-catalog'? Yes or No?",
+                                                                          "the section named 'grl-catalog'? Answer yes or no only. Do not include any explanation.",
 
                         "intentional element has name, id, and type": "In the XML enclosed using triple back ticks, "
                                                                       "do you find an element with name "
                                                                       "'intentional-element' with missing the"
-                                                                      "following attributes missed- name, id, type? Answer yes or no only.",
+                                                                      "following attributes missed- name, id, type? Answer yes or no only. Do not include any explanation.",
 
                         "actors section found in the model": "Does the XML have a section with title 'actor-def'?Yes or No?",
 
-                        "actors used in links": "In the given XML, each actor element as an 'id' attribute. Do you see the value of 'id' "
+                        "actors used in links": "In the given XML, each actor element has an 'id' attribute, do you see the value of 'id' "
                             "attribute of an actor element used as the value for 'srcid' or 'destid' attributes "
-                            "within the section named 'link-def'?",
+                            "within the section named 'link-def'?Answer yes or no only. Do not include any explanation.",
 
 
                         "section for linked actors and intentional elements found in the model": "Does the XML have a section with title "
-                                                                                                 "'actor-IE-link-def'? Answer using yes or no only?",
+                                                                                                 "'actor-IE-link-def'? Answer using yes or no only? Do not include any explanation.",
 
                         "multiple actors for one intentional element": "In the XML enclosed using triple back ticks, within the section with name "
                             "'actor-IE-link-def', do you see any element with same value for 'ie' attribute, "
-                            "but different value for 'actor' attribute? Answer Yes or No? >",
+                            "but different value for 'actor' attribute? Answer Yes or No? Do not include any explanation.",
 
                         "intentional element category": "In the XML enclosed using triple back ticks, for an element "
-                                                        "with name 'intentional-element', is the value for type "
-                                                        "attribute for the tag one of the following values - Task, Goal, Softgoal, Resource, Belief?",
+                                                        "with name 'intentional-element', is the value for 'type' "
+                                                        "attribute of the tag one of the following values - Task, Goal, Softgoal, Resource, Belief? Answer yes or no only. Do not include any explanation.",
 
                         "intentional element default decomposition type": "In the XML enclosed using triple back "
                                                                           "ticks, for an element with name "
-                                                                          "'intentional-element', is the value for"
-                                                                          "decompositiontype attribute for the tag one of the following "
-                                                                          "values - AND, OR, XOR?",
+                                                                          "'intentional-element', is the value of "
+                                                                          "attribute 'decompositiontype' of the tag one of the following "
+                                                                          "values - AND, OR, XOR? Answer yes or no only. Do not include any explanation.",
 
                         "contribution type category": "In the XML enclosed using triple back ticks, if you see an "
-                                                      "element with name 'contribution', is the value for "
-                                                      "contributiontype"
-                                                      "attribute for the tag one of the following values- Make, Help, Break, Hurt?  Answer Yes, "
-                                                      "or No if element with name 'contribution' if present. Otherwise answer Not Applicable.",
+                                                      "element with name 'contribution', is the value for the attribute "
+                                                      "'contributiontype'"
+                                                      " of the tag one of the following values- Make, Help, Break, Hurt?  Answer Yes, "
+                                                      "or No if element with name 'contribution' is present. Otherwise answer Not Applicable. Do not include any explanation.",
 
                         "contribution link validation": "In the XML enclosed using triple back ticks,, if you see an "
                                                         "element with name 'contribution', are the values for srcid "
                                                         "and destid"
                                                         "attributes in each tag different? Answer Yes, or No if element with name "
-                                                        "'contribution' if present. Otherwise answer Not Applicable.",
+                                                        "'contribution' is present. Otherwise answer Not Applicable. Do not include any explanation.",
 
                         "contribution link without source": "In the XML enclosed using triple back ticks, if you see "
-                                                            "an element with name 'contribution', is the"
+                                                            "an element with name 'contribution', is the "
                                                             "value for srcid empty string, or is element with name "
-                                                            "'contribution' missing attribute 'srcid'? Yes or No?",
+                                                            "'contribution' missing attribute 'srcid'? Answer yes or no only. Do not include any explanation.",
 
                         "contribution link without destination": "In the XML enclosed using triple back ticks, if you "
                                                                  "see a element with name 'contribution',"
                                                                  "is the value for destid empty string, or is element "
                                                                  "with name 'contribution' missing attribute 'destid? "
-                                                                 "Yes or No",
+                                                                 "Answer yes or no only. Do not include any explanation.",
 
                         "decomposition link without source": "In the XML enclosed using triple back ticks, if you see "
-                                                             "an element with name 'decomposition', is the"
+                                                             "an element with name 'decomposition', is the "
                                                              "value for srcid empty string, or is element with name "
-                                                             "'decomposition' missing attribute 'srcid'? Yes or No?",
+                                                             "'decomposition' missing attribute 'srcid'? Answer yes or no only. Do not include any explanation.",
 
                         "decomposition link without destination": "In the XML enclosed using triple back ticks, "
-                                                                  "if you see a element with name 'decomposition',"
+                                                                  "if you see an element with name 'decomposition',"
                                                                   "is the value for destid empty string, "
                                                                   "or is element with name 'contribution' missing "
-                                                                  "attribute 'destid? Yes or No",
+                                                                  "attribute 'destid? Answer yes or no only. Do not include any explanation.",
 
                         "decomposition link validation": "In the XML enclosed using triple back ticks, if you see an "
                                                          "element with name 'decomposition', are the values for srcid "
                                                          "and destid"
                                                          "attributes for the tag different? Answer Yes, or No if element with name "
-                                                         "'decomposition' if present. Otherwise answer Not Applicable."
+                                                         "'decomposition' if present. Otherwise answer Not Applicable. Do not include any explanation."
                         }
 
 
@@ -178,7 +177,7 @@ def getCriteria() -> list:
             "Compare model modified and created dates",
             "Contribution link validation",
             "Contribution link without source",
-            "Contribution link without destination"
+            "Contribution link without destination",
             "Contribution type category",
             "Decomposition link validation",
             "Decomposition link without source",
@@ -201,5 +200,6 @@ def getPrompt_text(query_prompt: str) -> str:
         # print(dict_criteriaprompts[query_prompt.lower()])
         return dict_criteriaprompts[query_prompt.lower().strip()]
     except:
+        print(query_prompt)
         print("no text")
         return ""

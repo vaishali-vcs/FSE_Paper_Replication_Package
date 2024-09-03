@@ -6,11 +6,6 @@ from utils import getCriteria, getPrompt_text
 import traceback
 import re
 
-
-def click_button():
-    st.session_state.xml_input = ""
-
-
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 st.set_page_config(layout="wide")
 
@@ -50,107 +45,115 @@ An engineer is working on the below set of user stories:
 He created an initial goal model with the following elements:
 """
 
-st.header('Semantic Validation of GRL Goal Model using GPT-4', divider='rainbow')
+def main():
+    st.header('Semantic Validation of Goal Model using GPT-4', divider='rainbow')
 
-col1, col2 = st.columns([1, 2], gap='medium')
+    col1, col2 = st.columns([1, 2], gap='medium')
 
-with st.sidebar:
-    st.title('🤖💬 OpenAI Chatbot')
-    if 'OPENAI_API_KEY' in st.secrets:
-        st.success('API key provided', icon='✅')
+    with st.sidebar:
+        st.title('🤖💬 OpenAI Chatbot')
+        if 'OPENAI_API_KEY' in st.secrets:
+            st.success('API key provided', icon='✅')
 
-    chosen_temp = st.slider("Temperature",
-                            0.0, 2.0, 0.80)
-    st.write("Temperature", chosen_temp)
-    st.write("LLM: gpt-3.5-turbo")
+        chosen_temp = st.slider("Temperature",
+                                0.0, 2.0, 0.80)
+        st.write("Temperature", chosen_temp)
+        st.write("LLM: gpt-3.5-turbo")
 
-    m = st.markdown("""
-    <style>
-    div.stButton > button:first-child {
-        background-color: #0099ff;
-        color:#ffffff;
-    }
-    div.stButton > button:hover {
-        background-color: #00ff00;
-        color:#ff0000;
+        m = st.markdown("""
+        <style>
+        div.stButton > button:first-child {
+            background-color: #0099ff;
+            color:#ffffff;
         }
-    </style>""", unsafe_allow_html=True)
+        div.stButton > button:hover {
+            background-color: #00ff00;
+            color:#ff0000;
+            }
+        </style>""", unsafe_allow_html=True)
 
-with col1:
-    # custom_css = '''
-    #    <style>
-    #        textarea {
-    #            width: 2000px !important;
-    #        }
-    #    </style>
-    #    '''
-    #
-    # st.write(custom_css, unsafe_allow_html=True)
-    st.header("Goal Model")
-    xmloutput = st.text_area("Enter Goal Model XML", value="", max_chars=None,
-                             help=None, on_change=None, args=None, key = "xml_input",
-                             placeholder=None, disabled=False, height=800, label_visibility="visible")
-    st.button('Clear', on_click=click_button)
+    with col1:
+        # custom_css = '''
+        #    <style>
+        #        textarea {
+        #            width: 2000px !important;
+        #        }
+        #    </style>
+        #    '''
+        #
+        # st.write(custom_css, unsafe_allow_html=True)
+        st.header("Goal Model")
+        xmloutput = st.text_area("Enter Goal Model XML", value="", max_chars=None, key=None,
+                                 help=None, on_change=None, args=None,
+                                 placeholder=None, disabled=False, height=800, label_visibility="visible")
 
-if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "gpt-4"
+    if "openai_model" not in st.session_state:
+        st.session_state["openai_model"] = "gpt-4"
 
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-    st.session_state.intentional_elements = {}
-    st.session_state.index_key = 0
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
+        st.session_state.intentional_elements = {}
+        st.session_state.index_key = 0
 
-with col2:
-    st.header("Validation Criteria")
-    option = st.multiselect("Select one criteria to validate?", max_selections=1, placeholder="Choose a Criteria",
-                            options=getCriteria())
+    with col2:
+        st.header("Validation Criteria")
+        option = st.multiselect("Select one criteria to validate?", max_selections=1, placeholder="Choose a Criteria",
+                                options=getCriteria())
 
-    complete_prompt = ""
-    print(len(xmloutput))
-    print(len(option))
+        complete_prompt = ""
+        print(len(xmloutput))
+        print(len(option))
 
-    if len(option) > 0:
-        st.write(f"Prompt selected: {getPrompt_text(option[0])}")
-        prompt_part1 = getPrompt_text(option[0])
-        prompt_part2 = "```" + xmloutput + "```"
+        if len(xmloutput)<=0:
+            st.error('Enter GRL XML', icon="🚨")
+            return
 
-        complete_prompt = prompt_part1 + prompt_part2
+        if len(option) > 0:
+            st.write(f"Prompt selected: {getPrompt_text(option[0])}")
+            prompt_part1 = getPrompt_text(option[0])
+            prompt_part2 = "```" + xmloutput + "```"
 
-    print(complete_prompt)
+            complete_prompt = prompt_part1 + prompt_part2
 
-    for message in st.session_state.messages[1:]:
-        if message["role"] != "system":
-            with st.chat_message(message["role"]):
-                st.markdown(re.sub('```(.*?)```', '', message["content"],  flags=re.DOTALL))
+        print(complete_prompt)
 
-    if complete_prompt != "":
-        # create a markdown-formatted message that asks GPT to explain the function, formatted as a bullet list
-        explain_system_message = {
-            "role": "system",
-            "content": context,
-        }
-        st.session_state.messages.append(explain_system_message)
+        for message in st.session_state.messages[1:]:
+            if message["role"] != "system":
+                with st.chat_message(message["role"]):
+                    st.markdown(re.sub('```(.*?)```', '', message["content"],  flags=re.DOTALL))
 
-        st.session_state.messages.append({"role": "user", "content": complete_prompt})
-        with st.chat_message("user"):
-            st.markdown(prompt_part1)
+        if complete_prompt != "":
+            # create a markdown-formatted message that asks GPT to explain the function, formatted as a bullet list
+            explain_system_message = {
+                "role": "system",
+                "content": context,
+            }
+            st.session_state.messages.append(explain_system_message)
 
-        with st.chat_message("assistant"):
-            stream = client.chat.completions.create(
-                model=st.session_state["openai_model"],
-                temperature=chosen_temp,
-                messages=[
-                    {"role": m["role"], "content": m["content"]}
-                    for m in st.session_state.messages
-                ],
-                stream=True,
-            )
-            response = st.write_stream(stream)
-            # print(response)
-            # try:
-            #     st.session_state.intentional_elements[intentional_elements_keys[st.session_state.index_key]] = response
-            #     st.session_state.index_key += 1
-            # except Exception as e:
-            #     print(f'caught {type(e)}: e')
+            st.session_state.messages.append({"role": "user", "content": complete_prompt})
+            with st.chat_message("user"):
+                st.markdown(prompt_part1)
 
-            st.session_state.messages.append({"role": "assistant", "content": response})
+            with st.chat_message("assistant"):
+                stream = client.chat.completions.create(
+                    model=st.session_state["openai_model"],
+                    temperature=chosen_temp,
+                    messages=[
+                        {"role": m["role"], "content": m["content"]}
+                        for m in st.session_state.messages
+                    ],
+                    stream=True,
+                )
+                response = st.write_stream(stream)
+                # print(response)
+                # try:
+                #     st.session_state.intentional_elements[intentional_elements_keys[st.session_state.index_key]] = response
+                #     st.session_state.index_key += 1
+                # except Exception as e:
+                #     print(f'caught {type(e)}: e')
+
+                st.session_state.messages.append({"role": "assistant", "content": response})
+
+
+if __name__ == '__main__':
+    main()
