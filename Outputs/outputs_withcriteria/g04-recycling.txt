@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grl-catalog catalog-name="UserStoriesCatalog" description="Catalog of intentional elements derived from user stories" author="requirements_engineer">
+    <element-def>
+        <intentional-element id="1" name="user satisfaction" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="2" name="database reliability and integrity" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="3" name="system responsiveness" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="4" name="effective communication" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="5" name="information accuracy" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="6" name="user engagement" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="7" name="onboard recycling centers" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="8" name="update recycling center information" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="9" name="view user error logs" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="10" name="contact administrators" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="11" name="provide latest information about recycling center" description="" type="Task" decompositiontype="XOR"/>
+        <intentional-element id="12" name="communicate changes to users" description="" type="Task" decompositiontype="XOR"/>
+        <intentional-element id="13" name="view user visits" description="" type="Task" decompositiontype="OR"/>
+        <intentional-element id="14" name="view recyclable waste" description="" type="Task" decompositiontype="OR"/>
+        <intentional-element id="15" name="gather latest information about recycling centers" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="16" name="ensure information is up-to-date" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="17" name="clear communication channels" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="18" name="version control" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="19" name="statistics dashboard" description="" type="Task" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="11" destid="16" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="11" destid="18" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="12" destid="18" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="13" destid="19" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="14" destid="19" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="11" destid="7"/>
+        <decomposition name="Decomposition2" description="" srcid="12" destid="8"/>
+        <decomposition name="Decomposition3" description="" srcid="13" destid="19"/>
+        <decomposition name="Decomposition4" description="" srcid="14" destid="19"/>
+        <decomposition name="Decomposition5" description="" srcid="15" destid="8"/>
+        <decomposition name="Decomposition6" description="" srcid="16" destid="8"/>
+        <decomposition name="Decomposition7" description="" srcid="17" destid="4"/>
+        <decomposition name="Decomposition8" description="" srcid="18" destid="5"/>
+        <decomposition name="Decomposition9" description="" srcid="19" destid="6"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="User" description=""/>
+        <actor id="2" name="Admin" description=""/>
+        <actor id="3" name="Superuser" description=""/>
+        <actor id="4" name="Recycling Facility Representative" description=""/>
+        <actor id="5" name="Recycling Facility" description=""/>
+        <actor id="6" name="System Administrator" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="1" ie="5"/>
+        <actorContIE actor="1" ie="6"/>
+        <actorContIE actor="2" ie="1"/>
+        <actorContIE actor="2" ie="2"/>
+        <actorContIE actor="2" ie="3"/>
+        <actorContIE actor="2" ie="4"/>
+        <actorContIE actor="2" ie="5"/>
+        <actorContIE actor="2" ie="6"/>
+        <actorContIE actor="3" ie="1"/>
+        <actorContIE actor="3" ie="2"/>
+        <actorContIE actor="3" ie="3"/>
+        <actorContIE actor="3" ie="4"/>
+        <actorContIE actor="3" ie="5"/>
+        <actorContIE actor="3" ie="6"/>
+        <actorContIE actor="4" ie="1"/>
+        <actorContIE actor="4" ie="2"/>
+        <actorContIE actor="4" ie="3"/>
+        <actorContIE actor="4" ie="4"/>
+        <actorContIE actor="4" ie="5"/>
+        <actorContIE actor="4" ie="6"/>
+        <actorContIE actor="5" ie="1"/>
+        <actorContIE actor="5" ie="2"/>
+        <actorContIE actor="5" ie="3"/>
+        <actorContIE actor="5" ie="4"/>
+        <actorContIE actor="5" ie="5"/>
+        <actorContIE actor="5" ie="6"/>
+        <actorContIE actor="6" ie="1"/>
+        <actorContIE actor="6" ie="2"/>
+        <actorContIE actor="6" ie="3"/>
+        <actorContIE actor="6" ie="4"/>
+        <actorContIE actor="6" ie="5"/>
+        <actorContIE actor="6" ie="6"/>
+    </actor-IE-link-def>
+</grl-catalog>

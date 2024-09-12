@@ -1,0 +1,6 @@
+As a authenticateduser, I want to find a link on the sponsorships page to become a $350 level sponsor, so that I can pay for and become a sponsor role.
+As a anonymoususer, I want to See a list of attendees associated with this company, so that I know who from this sponsor organization is attending.
+As a authenticateduser, I want to identify myself as and pay for a $350 company sponsorship, so that I can easily become a sponsor at this level without having to interface with badcamp personnel to get a sponsorship.
+As a anonymoususer, I want to easily find a link in the menu that links to the registration form, so that I can easily register for the camp.
+As a anonymoususer, I want to fill out a user registration form, so that I can register for the camp and get an account on the website.
+As a anonymoususer, I want to find session information, so that I can go to a session.

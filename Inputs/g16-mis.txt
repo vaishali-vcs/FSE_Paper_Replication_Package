@@ -1,0 +1,6 @@
+As a collection curator, I want to map an item or items from one collection to another, so that an item may administratively belong to one collection but could appear in other collections.
+As a collection curator, I want to have a summary of all remote replication status at collection level on my dashboard.
+As a collection curator, I want to have my collection be encrypted with a key maintained on that server, a checksum made and stored of the encrypted file, and the encrypted file replicated to our remote storage site.
+As a collection curator, I want to lift an embargo for an object in a simple way.
+As a collection curator, I want to create deposit forms specific to the collection.
+As a collection curator, I want to allow some collections the option of setting an embargo date at deposit.

@@ -1,0 +1,6 @@
+As a research participant, I want to make sure that the appearance of the prototype does not distract from the workflow, so that I can complete the user interview.
+As an NSF employee, I want to know how brand guidelines are developed and maintained, so that I can incorporate them throughout the project.
+As a team member, I want to have an updated acquisitions roadmap, so that I can plan accordingly.
+As an NSF employee, I want to have an updated roadmap document, so that I can see prioritized areas to focus on for the next few months and beyond.
+As a workshop attendee, I want to have a summary of what we learned, so that I can understand our next steps and how they apply to me.
+As a team member, I want to have an updated acquisitions roadmap, so that I can plan accordingly.

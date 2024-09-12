@@ -1,0 +1,41 @@
+<grl-catalog catalog-name="UserStoryCatalog" description="Catalog of User Stories" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Improve user experience in searching for data packages" type="Task" decompositiontype="AND"/>
+        <intentional-element id="2" name="Enhance user experience in searching for data packages" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Improve user satisfaction with profile editing process" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Facilitate user communication and collaboration within the platform" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Maintain organization's data security and access control" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="6" name="Optimize user roles and permissions management within the organization" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Implement advanced search filters for data packages" type="Task" decompositiontype="AND"/>
+        <intentional-element id="8" name="Include sorting options for search results based on relevance or date" type="Task" decompositiontype="AND"/>
+        <intentional-element id="9" name="Provide autocomplete suggestions while searching" type="Task" decompositiontype="AND"/>
+        <intentional-element id="10" name="Introduce messaging feature for users to communicate" type="Task" decompositiontype="OR"/>
+        <intentional-element id="11" name="Implement notification system for updates and interactions" type="Task" decompositiontype="OR"/>
+        <intentional-element id="12" name="Enable user tagging and mentions in comments or messages" type="Task" decompositiontype="OR"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" srcid="7" destid="2" contributiontype="HELP"/>
+        <contribution name="Contribution2" srcid="7" destid="3" contributiontype="MAKE"/>
+        <contribution name="Contribution3" srcid="10" destid="4" contributiontype="HELP"/>
+        <contribution name="Contribution4" srcid="11" destid="4" contributiontype="HELP"/>
+        <contribution name="Contribution5" srcid="12" destid="4" contributiontype="HELP"/>
+        <contribution name="Contribution6" srcid="5" destid="6" contributiontype="MAKE"/>
+        <decomposition name="Decomposition1" srcid="7" destid="1"/>
+        <decomposition name="Decomposition2" srcid="8" destid="1"/>
+        <decomposition name="Decomposition3" srcid="9" destid="1"/>
+        <decomposition name="Decomposition4" srcid="10" destid="4"/>
+        <decomposition name="Decomposition5" srcid="11" destid="4"/>
+        <decomposition name="Decomposition6" srcid="12" destid="4"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Consumer"/>
+        <actor id="2" name="Owner"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="2" ie="3"/>
+        <actorContIE actor="2" ie="5"/>
+        <actorContIE actor="2" ie="6"/>
+        <actorContIE actor="1" ie="1"/>
+    </actor-IE-link-def>
+</grl-catalog>

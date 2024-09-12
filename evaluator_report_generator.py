@@ -51,7 +51,7 @@ def main():
     col1, col2 = st.columns([1, 2], gap='medium')
 
     with st.sidebar:
-        st.title('🤖💬 OpenAI Chatbot')
+        st.title('Parameters')
         if 'OPENAI_API_KEY' in st.secrets:
             st.success('API key provided', icon='✅')
 

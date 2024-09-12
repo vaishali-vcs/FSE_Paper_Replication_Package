@@ -1,0 +1,6 @@
+As a system administrator, I want to run a script that installs the Neurohub node onto a virgin Ubuntu operating system.
+As a system administrator, I want to run a script that tests to see if a Neurohub installation is functioning correctly.
+As a release engineer, I want to call a script to execute acceptance tests against a Neurohub installation and report back the results.
+As a systems administrator, I want to install Neurohub dependencies into an Ubuntu 10.04 LTS machine using the normal Ubuntu package management tools.
+As a researcher, I want to create a log book page for an experiment and attach a file to this page.
+As a researcher, I want to create a log book page for an experiment and attach a directory that contains multiple files.

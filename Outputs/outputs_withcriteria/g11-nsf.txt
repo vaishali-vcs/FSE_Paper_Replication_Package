@@ -1,0 +1,72 @@
+<grl-catalog catalog-name="SoftwareProject" description="Catalog for Software Project Requirements" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Ensure prototype appearance is visually appealing" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="2" name="Maintain brand consistency in project materials" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Enhance user experience during user interviews" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Improve project understanding through updated roadmaps" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Enhance knowledge retention from workshops" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="6" name="Conduct usability testing" type="Task" decompositiontype="AND"/>
+        <intentional-element id="7" name="Gather feedback from users" type="Task" decompositiontype="AND"/>
+        <intentional-element id="8" name="Iterate on design based on feedback" type="Task" decompositiontype="AND"/>
+        <intentional-element id="9" name="Review brand guidelines" type="Task" decompositiontype="AND"/>
+        <intentional-element id="10" name="Update project materials with brand elements" type="Task" decompositiontype="AND"/>
+        <intentional-element id="11" name="Develop user interview protocol" type="Task" decompositiontype="AND"/>
+        <intentional-element id="12" name="Train team on user experience best practices" type="Task" decompositiontype="AND"/>
+        <intentional-element id="13" name="Review current acquisitions roadmap" type="Task" decompositiontype="AND"/>
+        <intentional-element id="14" name="Consult with stakeholders on updates" type="Task" decompositiontype="AND"/>
+        <intentional-element id="15" name="Update acquisitions roadmap document" type="Task" decompositiontype="AND"/>
+        <intentional-element id="16" name="Compile workshop notes" type="Task" decompositiontype="AND"/>
+        <intentional-element id="17" name="Define next steps and action items" type="Task" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" srcid="6" destid="1" contributiontype="MAKE"/>
+        <contribution name="Contribution2" srcid="7" destid="1" contributiontype="MAKE"/>
+        <contribution name="Contribution3" srcid="8" destid="1" contributiontype="MAKE"/>
+        <contribution name="Contribution4" srcid="9" destid="2" contributiontype="MAKE"/>
+        <contribution name="Contribution5" srcid="10" destid="2" contributiontype="MAKE"/>
+        <contribution name="Contribution6" srcid="11" destid="3" contributiontype="MAKE"/>
+        <contribution name="Contribution7" srcid="12" destid="3" contributiontype="MAKE"/>
+        <contribution name="Contribution8" srcid="13" destid="4" contributiontype="MAKE"/>
+        <contribution name="Contribution9" srcid="14" destid="4" contributiontype="MAKE"/>
+        <contribution name="Contribution10" srcid="15" destid="4" contributiontype="MAKE"/>
+        <contribution name="Contribution11" srcid="16" destid="5" contributiontype="MAKE"/>
+        <contribution name="Contribution12" srcid="17" destid="5" contributiontype="MAKE"/>
+        <decomposition name="Decomposition1" srcid="6" destid="1"/>
+        <decomposition name="Decomposition2" srcid="7" destid="1"/>
+        <decomposition name="Decomposition3" srcid="8" destid="1"/>
+        <decomposition name="Decomposition4" srcid="9" destid="2"/>
+        <decomposition name="Decomposition5" srcid="10" destid="2"/>
+        <decomposition name="Decomposition6" srcid="11" destid="3"/>
+        <decomposition name="Decomposition7" srcid="12" destid="3"/>
+        <decomposition name="Decomposition8" srcid="13" destid="4"/>
+        <decomposition name="Decomposition9" srcid="14" destid="4"/>
+        <decomposition name="Decomposition10" srcid="15" destid="4"/>
+        <decomposition name="Decomposition11" srcid="16" destid="5"/>
+        <decomposition name="Decomposition12" srcid="17" destid="5"/>
+    </link-def>
+    <actor-def>
+        <actor id="101" name="Research Participant" description="Participant in research activities"/>
+        <actor id="102" name="NSF Employee" description="Employee at National Science Foundation"/>
+        <actor id="103" name="Workshop Attendee" description="Attendee at workshops"/>
+        <actor id="104" name="Team Member" description="Member of the project team"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="101" ie="1"/>
+        <actorContIE actor="102" ie="2"/>
+        <actorContIE actor="103" ie="3"/>
+        <actorContIE actor="104" ie="4"/>
+        <actorContIE actor="104" ie="5"/>
+        <actorContIE actor="104" ie="6"/>
+        <actorContIE actor="104" ie="7"/>
+        <actorContIE actor="104" ie="8"/>
+        <actorContIE actor="104" ie="9"/>
+        <actorContIE actor="104" ie="10"/>
+        <actorContIE actor="104" ie="11"/>
+        <actorContIE actor="104" ie="12"/>
+        <actorContIE actor="104" ie="13"/>
+        <actorContIE actor="104" ie="14"/>
+        <actorContIE actor="104" ie="15"/>
+        <actorContIE actor="104" ie="16"/>
+        <actorContIE actor="104" ie="17"/>
+    </actor-IE-link-def>
+</grl-catalog>

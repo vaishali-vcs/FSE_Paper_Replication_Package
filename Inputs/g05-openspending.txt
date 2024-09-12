@@ -1,0 +1,6 @@
+As a Platform Administrator, I want to be able to Hide any dataset already added as Public, So that I can maintain Public/Hidden status for other users.
+As a Platform Administrator, I want to have a view on all datasets published by all users, So that I can perform management actions on any dataset.
+As a Platform Administrator, I want to be able to delete any dataset published, So that I can deal with takedown requests, or clean up test datasets.
+As an API User, I want to be able to understand if a user is a Publisher, So that I can offer functionality based on Dataset Publisher privileges.
+As an API User, I want to be able to understand if a user is an Administrator, So that I can offer functionality based on Platform Administration privileges.
+As an API user, I want to be able to change the colors of the embedded visualisations in my own platform, So that I can customize the visualisations.

@@ -1,0 +1,6 @@
+As a legalofficer, I want to know about data sensitivity, so that I can establish sharing options.
+As an IT staff member, I want to have an estimate of the produced data volume, so that I can plan the overall storage consumption.
+As an administrator, I want to know who funded the project and their requirements, so that I can track the funder specific obligations.
+As an archivemanager, I want to know the legal status of data, so that I can apply the legal requirements accordingly.
+As an archivemanager, I want to know in advance the conservation period of data, so that I can better organize the service by adapting the preservation actions.
+As a data manager, I want to document all rights necessary for managing the data, so that I can curate and preserve the data.

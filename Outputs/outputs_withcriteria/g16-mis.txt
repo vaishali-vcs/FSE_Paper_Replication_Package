@@ -1,0 +1,33 @@
+<grl-catalog catalog-name="User_Story_Requirements" description="Catalog of User Story Requirements" author="Requirements_Engineer">
+    <element-def>
+        <intentional-element id="1" name="Ensure seamless and efficient mapping of items between collections" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="2" name="Maintain data integrity during remote replication processes" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Enhance user experience by simplifying embargo lifting procedures" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Improve system security through encryption and key management" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Facilitate easy creation of deposit forms specific to each collection" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="6" name="Provide flexibility for setting embargo dates at deposit" description="" type="Softgoal" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="1" destid="2" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="1" destid="3" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="1" destid="4" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="1" destid="5" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="1" destid="6" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="2" destid="1"/>
+        <decomposition name="Decomposition2" description="" srcid="3" destid="1"/>
+        <decomposition name="Decomposition3" description="" srcid="4" destid="1"/>
+        <decomposition name="Decomposition4" description="" srcid="5" destid="1"/>
+        <decomposition name="Decomposition5" description="" srcid="6" destid="1"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Collection Curator" description="Main actor responsible for managing collections"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="1" ie="5"/>
+        <actorContIE actor="1" ie="6"/>
+    </actor-IE-link-def>
+</grl-catalog>

@@ -1,0 +1,6 @@
+As an app developer, I want to deploy a new version of a dataset type as part of an app artifact, without affecting other datasets of this type.
+As an app developer, I want to explore a dataset instance of a type that was deployed as part of an app.
+As an app developer, I want to ensure that when I deploy an artifact without creating an app this will not create any dataset types or instances.
+As an app developer, I want to share a dataset type across multiple applications that include the dataset type's code in their artifacts.
+As an app developer, I want to ensure that when I deploy a new version of an app that includes a shared dataset type that all dataset instances created by this app start using the new code but all dataset instances created by other apps remain unchanged.
+As an app developer, I want to ensure that when I deploy a new version of an app that includes an older version of a dataset type deployed by another app and I expect that the dataset instances created by this app use the dataset type code included in this app.

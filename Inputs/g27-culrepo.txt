@@ -1,0 +1,6 @@
+As a faculty member, I want to maintain versioning of Extension brochures and FAQs, so that only the most current are used/adapted by other CCE Educators in their work.
+As a researcher, I want to discover items in the repository through the library's discovery system and Google, so that I can facilitate my easy use of the content.
+As a researcher, I want to see descriptive metadata for the item whether I come to the item through the repository or directly to the PDF, so that I can correctly identify the source of the content.
+As a researcher, I want to contact the author of a work that interests me, so that I can learn more about my research.
+As a researcher, I want to receive updates when new works are published in a given collection or by a given author, so that I can discover more of their work.
+As a patron, I want to search for report or dataset with keywords or a partial or complete title to locate needed report or dataset.

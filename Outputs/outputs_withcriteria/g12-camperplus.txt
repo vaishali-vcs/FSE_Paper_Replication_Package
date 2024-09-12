@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="CampAdministration" description="Catalog for Camp Administration System" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="Maintain data integrity of camper records" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="2" name="Ensure ease of access to consent forms" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Improve legal compliance through accurate record-keeping" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Enhance organizational efficiency for camp activities tracking" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Keep track of each individual camper" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="6" name="Keep records organized" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Lower the amount of work needed to be done" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Easily access consent forms" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Avoid legal issues" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Easily keep track of campers' locations at all times" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Add new camper information to the system" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="12" name="Update camper information as needed" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="13" name="Retrieve camper information when necessary" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="14" name="Implement a user-friendly interface for uploading and accessing consent forms" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="15" name="Implement search functionality for quick retrieval of consent forms" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="16" name="Provide easy sharing options for consent forms" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="17" name="Implement audit trails for tracking changes to camper records" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="18" name="Ensure compliance with data protection regulations" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="19" name="Generate reports on consent form submissions for legal purposes" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="20" name="Develop a scheduling system for camp activities" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="21" name="Provide notifications for activity changes or updates" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="22" name="Implement a tracking system for camper locations during activities" description="" type="Task" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="11" destid="1" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="12" destid="1" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="13" destid="1" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="14" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="15" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="16" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution7" description="" srcid="17" destid="3" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution8" description="" srcid="18" destid="3" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution9" description="" srcid="19" destid="3" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution10" description="" srcid="20" destid="4" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution11" description="" srcid="21" destid="4" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution12" description="" srcid="22" destid="4" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="11" destid="5"/>
+        <decomposition name="Decomposition2" description="" srcid="12" destid="6"/>
+        <decomposition name="Decomposition3" description="" srcid="13" destid="6"/>
+        <decomposition name="Decomposition4" description="" srcid="14" destid="8"/>
+        <decomposition name="Decomposition5" description="" srcid="15" destid="8"/>
+        <decomposition name="Decomposition6" description="" srcid="16" destid="8"/>
+        <decomposition name="Decomposition7" description="" srcid="17" destid="9"/>
+        <decomposition name="Decomposition8" description="" srcid="18" destid="9"/>
+        <decomposition name="Decomposition9" description="" srcid="19" destid="9"/>
+        <decomposition name="Decomposition10" description="" srcid="20" destid="10"/>
+        <decomposition name="Decomposition11" description="" srcid="21" destid="10"/>
+        <decomposition name="Decomposition12" description="" srcid="22" destid="10"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Camp Administrator" description=""/>
+        <actor id="2" name="Campers" description=""/>
+        <actor id="3" name="Camp Workers" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="2" ie="5"/>
+        <actorContIE actor="2" ie="6"/>
+        <actorContIE actor="2" ie="10"/>
+        <actorContIE actor="3" ie="4"/>
+    </actor-IE-link-def>
+</grl-catalog>

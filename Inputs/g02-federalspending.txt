@@ -1,0 +1,6 @@
+As a broker team member, I want to make some updates to the SQL codes for clarity.
+As an Agency user, I want to have all derived data elements derived properly.
+As a broker team member, I want to add the 00***** and 00FORGN PPoPCode cases to the derivation logic.
+As a Data user, I want to see the office names derived from office codes, so that I can have appropriate context for understanding them.
+As a UI designer, I want to begin user testing, so that I can validate stakeholder UI improvement requests.
+As a Developer , I want to ensure that attempts to correct or delete non-existent records donot create new published data.

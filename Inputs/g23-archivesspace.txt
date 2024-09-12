@@ -1,0 +1,6 @@
+As an Archivist, I want to import Accessions data in CSV.
+As an Archivist, I want to specify the Source for a Name Form of an Agent and add new Sources and edit existing Sources.
+As an Archivist, I want to create and edit Agent records.
+As an Archivist, I want to create and edit a Resource record.
+As an Archivist, I want to associate a Subject record with a Resource description.
+As an Archivist, I want to assign Location information to a Container.

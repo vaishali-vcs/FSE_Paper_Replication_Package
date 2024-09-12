@@ -1,0 +1,6 @@
+As a researcher, I want to be able to search across photo collection images, so that I can prepare presentations.
+As a researcher, I want to search using structured data, so that I can find everything relevant to my inquiry across collections.
+As a researcher, I want to access tagged working papers, so that my research process is better informed.
+As a researcher, I want to access educational outreach materials, so that I can make connections with institutions.
+As a researcher, I want to have accurate cross-collection citation information, so that I can find materials again.
+As a researcher, I want to access digitized archival materials without mediation, so that I can decide what, I want to look at.

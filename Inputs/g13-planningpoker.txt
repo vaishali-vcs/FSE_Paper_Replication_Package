@@ -1,0 +1,6 @@
+As a moderator, I want to invite estimators by giving them a URL where they can access the game, so that we can start the game.
+As a moderator, I want to start a round by entering an item in a single multi-line text field, so that we can estimate it.
+As a developer, I want to have a list of definitions for commonly used terms, so that everyone working on the project can understand each other more easily.
+As a developer, I want to have created database indexes, so that the queries run as fast as possible.
+As a moderator, I want to import stories from a spreadsheet, so that I don't have to copy and paste each individual story.
+As a moderator, I want to edit an item in the list of items to be estimated, so that I can make it better reflect the team's understanding of the item.

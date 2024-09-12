@@ -1,0 +1,6 @@
+As a repository manager, I want to know all the collections for which I have curatorial responsibility.
+As a repository manager, I want to compose collections.
+As a repository manager, I want to limit the collection to the items sharing the same provenance
+As a repository manager, I want to limit the collection to represent a part of a collection have a singular provenance,
+As a repository manager, I want to assembly a collection from other collections and objects.
+As a repository manager, I want to say one collection is related to another collection.  

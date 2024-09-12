@@ -1,0 +1,6 @@
+As a Developer, I want to get a Data Package into Node, so that I can start using the data for doing analysis and visualizations.
+As a Researcher, I want to get a Data Package into Julia in seconds, so that I can start using the data for doing analysis and visualizations. 
+As a Publisher, I want to add type information to my data, so that it is more useful to others and can be used better with tools like visualization programs. 
+As a Publisher, I want to be able to provide a visualization of data in the Data Package, so that I can provide my analysis and show my work to users of the data. 
+As a Researcher, I want to be able to save new visualizations, so that I can share them with others or include them in the Data Package. 
+As a ResearcherPublisher, I want to know that my data conforms to its Data Package profile, so that I can feel trust in the validity and usefulness of the data. 

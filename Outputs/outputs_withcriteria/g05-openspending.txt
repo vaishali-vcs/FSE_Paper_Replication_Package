@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStoryCatalog" description="Catalog containing user stories information" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="Hide any dataset already added as Public" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="2" name="Maintain Public/Hidden status for other users" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Perform management actions on any dataset" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Delete any dataset published" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Deal with takedown requests" description="" type="Softgoal" decompositiontype="HELP"/>
+        <intentional-element id="6" name="Clean up test datasets" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Understand if a user is a Publisher" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Understand if a user is an Administrator" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Change the colors of the embedded visualisations in my platform" description="" type="Goal" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="1" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="1" destid="3" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="1" destid="4" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="3" destid="5" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="6" destid="5" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="7" destid="8" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution7" description="" srcid="7" destid="9" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Platform Administrator" description="An actor responsible for administrative tasks on the platform"/>
+        <actor id="2" name="Data Consuming User" description="An actor who uses data from the platform"/>
+        <actor id="3" name="Data Publishing User" description="An actor who publishes data on the platform"/>
+        <actor id="4" name="API User" description="An actor who interacts with the platform via an API"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="2" ie="5"/>
+        <actorContIE actor="3" ie="6"/>
+        <actorContIE actor="4" ie="7"/>
+        <actorContIE actor="4" ie="8"/>
+        <actorContIE actor="4" ie="9"/>
+    </actor-IE-link-def>
+</grl-catalog>

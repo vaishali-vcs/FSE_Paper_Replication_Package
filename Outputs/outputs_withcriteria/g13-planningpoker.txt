@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grl-catalog catalog-name="UserStoriesCatalog" description="Catalog containing intentional elements from user stories analysis" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="invite estimators by giving them a URL to access the game" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="2" name="start a round by entering an item in a single multi-line text field" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="3" name="have a list of definitions for commonly used terms" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="4" name="create database indexes" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="import stories from a spreadsheet" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="6" name="edit an item in the list of items to be estimated" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Improve collaboration among estimators" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Enhance user understanding of project terminology" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Optimize database query performance" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Streamline the process of importing stories" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Facilitate efficient editing of items for estimation" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="12" name="Generate cars" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="13" name="Create new cars" type="Task" decompositiontype="AND"/>
+        <intentional-element id="14" name="Keep same cars" type="Task" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" srcid="13" destid="7" contributiontype="MAKE"/>
+        <contribution name="Contribution2" srcid="13" destid="8" contributiontype="HELP"/>
+        <contribution name="Contribution3" srcid="13" destid="9" contributiontype="MAKE"/>
+        <contribution name="Contribution4" srcid="14" destid="11" contributiontype="MAKE"/>
+        <decomposition name="Decomposition1" srcid="13" destid="12"/>
+        <decomposition name="Decomposition2" srcid="14" destid="12"/>
+        <dependency name="Dependency1" dependerid="12" dependeeid="1"/>
+        <dependency name="Dependency2" dependerid="12" dependeeid="2"/>
+        <dependency name="Dependency3" dependerid="12" dependeeid="3"/>
+        <dependency name="Dependency4" dependerid="12" dependeeid="4"/>
+        <dependency name="Dependency5" dependerid="12" dependeeid="5"/>
+        <dependency name="Dependency6" dependerid="12" dependeeid="6"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="moderator"/>
+        <actor id="2" name="developer"/>
+        <actor id="3" name="estimator"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="2" ie="1"/>
+        <actorContIE actor="2" ie="3"/>
+        <actorContIE actor="3" ie="1"/>
+    </actor-IE-link-def>
+</grl-catalog>

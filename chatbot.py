@@ -90,7 +90,7 @@ import streamlit as st
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 with st.sidebar:
-    st.title('🤖💬 OpenAI Chatbot')
+    st.title('Parameters')
     if 'OPENAI_API_KEY' in st.secrets:
         st.success('API key provided', icon='✅')
 

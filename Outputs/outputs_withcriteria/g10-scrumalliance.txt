@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStories" description="GRL model representing user stories" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Create a new course or event" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="2" name="Charge a listing fee for listing an activity" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Update existing courses or events" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Delete courses or events" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Copy courses or events" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="6" name="Display upcoming courses to visitors" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Encourage visitor registration" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Benefit membership through registration" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Ensure accurate event/course information is displayed" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Maintain data integrity of course/event listings" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Enhance user experience on the platform" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="12" name="Increase visitor engagement with course/event listings" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="13" name="Improve trainer satisfaction with platform functionality" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="14" name="Create a new course or event" type="Task" decompositiontype="AND"/>
+        <intentional-element id="15" name="Charge a listing fee for listing an activity" type="Task" decompositiontype="AND"/>
+        <intentional-element id="16" name="Update existing courses or events" type="Task" decompositiontype="AND"/>
+        <intentional-element id="17" name="Delete courses or events" type="Task" decompositiontype="AND"/>
+        <intentional-element id="18" name="Copy courses or events" type="Task" decompositiontype="AND"/>
+        <intentional-element id="19" name="Display upcoming courses to visitors" type="Task" decompositiontype="AND"/>
+        <intentional-element id="20" name="Encourage visitor registration" type="Task" decompositiontype="AND"/>
+        <intentional-element id="21" name="Benefit membership through registration" type="Task" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" srcid="14" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution2" srcid="11" destid="12" contributiontype="MAKE"/>
+        <contribution name="Contribution3" srcid="12" destid="13" contributiontype="HELP"/>
+        <contribution name="Contribution4" srcid="12" destid="15" contributiontype="MAKE"/>
+        <contribution name="Contribution5" srcid="12" destid="20" contributiontype="HELP"/>
+        <contribution name="Contribution6" srcid="13" destid="20" contributiontype="MAKE"/>
+        <decomposition name="Decomposition1" srcid="14" destid="1"/>
+        <decomposition name="Decomposition2" srcid="15" destid="2"/>
+        <decomposition name="Decomposition3" srcid="16" destid="3"/>
+        <decomposition name="Decomposition4" srcid="17" destid="4"/>
+        <decomposition name="Decomposition5" srcid="18" destid="5"/>
+        <decomposition name="Decomposition6" srcid="19" destid="6"/>
+        <decomposition name="Decomposition7" srcid="20" destid="7"/>
+        <decomposition name="Decomposition8" srcid="21" destid="8"/>
+        <decomposition name="Decomposition9" srcid="9" destid="1"/>
+        <decomposition name="Decomposition10" srcid="10" destid="2"/>
+        <decomposition name="Decomposition11" srcid="11" destid="3"/>
+        <decomposition name="Decomposition12" srcid="12" destid="6"/>
+        <decomposition name="Decomposition13" srcid="13" destid="8"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Trainer" description="Primary actor who creates and manages courses/events"/>
+        <actor id="2" name="Site visitors" description="Actors who visit the platform to view and register for courses/events"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="11"/>
+        <actorContIE actor="1" ie="13"/>
+        <actorContIE actor="1" ie="14"/>
+        <actorContIE actor="1" ie="16"/>
+        <actorContIE actor="1" ie="18"/>
+        <actorContIE actor="1" ie="20"/>
+        <actorContIE actor="1" ie="21"/>
+        <actorContIE actor="2" ie="1"/>
+        <actorContIE actor="2" ie="2"/>
+        <actorContIE actor="2" ie="3"/>
+        <actorContIE actor="2" ie="4"/>
+        <actorContIE actor="2" ie="5"/>
+        <actorContIE actor="2" ie="6"/>
+        <actorContIE actor="2" ie="7"/>
+        <actorContIE actor="2" ie="8"/>
+    </actor-IE-link-def>
+</grl-catalog>

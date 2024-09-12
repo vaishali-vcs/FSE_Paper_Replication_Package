@@ -1,0 +1,79 @@
+Does the XML have a section with title 'actor-def'?Yes or No?
+
+Yes
+
+In the given XML, each actor element has an 'id' attribute, do you see the value of 'id' attribute of an actor element used as the value for 'srcid' or 'destid' attributes within the section named 'link-def'?Answer yes or no only. Do not include any explanation.
+
+No
+
+In the XML enclosed using triple back ticks, if you see the attributes 'modified' and 'created', convert the values of both theattributes to Date and compare them. Is value of 'modified' attribute greater than the value of 'created' attribute? Answer Yes, or No if the attributes 'modified' and 'created' are present. Otherwise answer Not Applicable. Do not include any explanation.
+
+Not Applicable
+
+In the XML enclosed using triple back ticks,, if you see an element with name 'contribution', are the values for srcid and destidattributes in each tag different? Answer Yes, or No if element with name 'contribution' is present. Otherwise answer Not Applicable. Do not include any explanation.
+
+Yes
+
+In the XML enclosed using triple back ticks, if you see an element with name 'contribution', is the value for srcid empty string, or is element with name 'contribution' missing attribute 'srcid'? Answer yes or no only. Do not include any explanation.
+
+No
+
+In the XML enclosed using triple back ticks, if you see a element with name 'contribution',is the value for destid empty string, or is element with name 'contribution' missing attribute 'destid? Answer yes or no only. Do not include any explanation.
+
+No
+
+In the XML enclosed using triple back ticks, if you see an element with name 'contribution', is the value for the attribute 'contributiontype' of the tag one of the following values- Make, Help, Break, Hurt? Answer Yes, or No if element with name 'contribution' is present. Otherwise answer Not Applicable. Do not include any explanation.
+
+Yes
+
+In the XML enclosed using triple back ticks, if you see an element with name 'decomposition', are the values for srcid and destidattributes for the tag different? Answer Yes, or No if element with name 'decomposition' if present. Otherwise answer Not Applicable. Do not include any explanation.
+
+Yes
+
+In the XML enclosed using triple back ticks, if you see an element with name 'decomposition', is the value for srcid empty string, or is element with name 'decomposition' missing attribute 'srcid'? Answer yes or no only. Do not include any explanation.
+
+No
+
+In the XML enclosed using triple back ticks, if you see an element with name 'decomposition',is the value for destid empty string, or is element with name 'contribution' missing attribute 'destid? Answer yes or no only. Do not include any explanation.
+
+No
+
+In the XML enclosed using triple back ticks, do you see duplicate values for'id' attribute? Answer using yes or no only. Do not include any explanation.
+
+No
+
+In the XML enclosed using triple back ticks, do you see duplicate values for'name' attribute? Answer using yes or no only. Do not include any explanation.
+
+Yes
+
+In the XML enclosed using triple back ticks, do you see that the element named 'grl-catalog' is empty? Answer yes or no only. Do not include any explanation.
+
+No
+
+In the XML enclosed using triple back ticks, do you see empty string as a value for 'name' attribute? Answer using yes or no only. Do not include any explanation.
+
+No
+
+In the XML enclosed using triple back ticks, do you see any content outside of the section named 'grl-catalog'? Answer yes or no only. Do not include any explanation.
+
+No
+
+In the XML enclosed using triple back ticks, do you find an element with name 'intentional-element' with missing thefollowing attributes missed- name, id, type? Answer yes or no only. Do not include any explanation.
+
+No
+
+In the XML enclosed using triple back ticks, for an element with name 'intentional-element', is the value for 'type' attribute of the tag one of the following values - Task, Goal, Softgoal, Resource, Belief? Answer yes or no only. Do not include any explanation.
+
+Yes
+
+In the XML enclosed using triple back ticks, for an element with name 'intentional-element', is the value of attribute 'decompositiontype' of the tag one of the following values - AND, OR, XOR? Answer yes or no only. Do not include any explanation.
+
+Yes
+
+In the XML enclosed using triple back ticks, within the section with name 'actor-IE-link-def', do you see any element with same value for 'ie' attribute, but different value for 'actor' attribute? Answer Yes or No? Do not include any explanation.
+
+No
+
+Does the XML have a section with title 'actor-IE-link-def'? Answer using yes or no only? Do not include any explanation.
+
+Yes

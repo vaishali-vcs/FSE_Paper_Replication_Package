@@ -1,0 +1,6 @@
+As a camp administrator, I want to be able to add campers, so that I can keep track of each individual camper.
+As a camp administrator, I want to be able to remove campers if they don't attend the camp anymore, so that I can keep the records organized.
+As a camp administrator, I want to be able to keep camper records from previous years, so that the amount of work I need to do is lowered. 
+As a camp administrator, I want to be able to upload consent forms, so that campers or their parents can easily access the forms.
+As a camp administrator, I want to be able to keep track of which camper submitted which forms, so that legal issues are avoided.
+As a camp administrator, I want to be able to schedule activities for campers, so that camp workers can easily keep track of who is where at all times.

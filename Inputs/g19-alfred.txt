@@ -1,0 +1,6 @@
+As a MedicalCaregiver, I want to have ALFRED to be able to determine the user's blood pressure. 
+As a MedicalCaregiver, I want to have ALFRED to be able to determine the user's body temperature. 
+As a MedicalCaregiver, I want to have ALFRED to be able to determine the user's heart rate. 
+As a MedicalCaregiver, I want to have ALFRED to be able to determine the user's breathing frequency. 
+As a MedicalCaregiver, I want to have feedback on the activity level of the user. 
+As a MedicalCaregiver, I want to have ALFRED to propose me games that require the combination of mental and physical exercise, such as opposing motion exercises of the arms and legs. 

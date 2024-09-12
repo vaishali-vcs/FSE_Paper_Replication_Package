@@ -1,0 +1,6 @@
+As a user, I want to contact the administrators, so that I can give feedback or ask for help.
+As an admin, I want to add recycling center information, so that I can keep the database up-to-date over time.
+As an admin, I want to view user error logs, so that I can fix or review any issues that are being faced by users of the system.
+As an admin, I want to onboard recycling centers on the platform, so that I can increase information accuracy.
+As a superuser, I want to update the recycling center information, so that I can provide the latest information about the recycling center.
+As a superuser, I want to view users' stats, so that I can view in real-time how many users have visited my recycling center information and their recyclable waste.

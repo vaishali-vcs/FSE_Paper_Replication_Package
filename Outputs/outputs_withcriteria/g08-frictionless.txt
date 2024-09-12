@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="SoftwareRequirements" description="Catalog for Software Requirements" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Get a Data Package into Node" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="2" name="Get a Data Package into Julia in seconds" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Add type information to data" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Provide visualization of data in Data Package" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Save new visualizations" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="6" name="Ensure data conforms to its Data Package profile" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Achieve Quick Data Access" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Enhance Data Usability" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Ensure Data Integrity and Validation" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Improve Data Package Trustworthiness" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Load Data Package" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="12" name="Access Data for Analysis and Visualizations" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="13" name="Transfer Data Package to Julia" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="14" name="Enable Quick Access to Data for Analysis and Visualizations" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="15" name="Identify Data Types" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="16" name="Assign Type Information to Data Attributes" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="17" name="Develop Visualization Feature" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="18" name="Integrate Visualization Tool with Data Package" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="19" name="Implement Save Functionality for Visualizations" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="20" name="Store Visualizations in Data Package" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="21" name="Validate Data Against Data Package Profile" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="22" name="Update Data to Meet Profile Requirements" description="" type="Task" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="11" destid="7" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="12" destid="8" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="13" destid="9" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="14" destid="8" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="19" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="11" destid="1"/>
+        <decomposition name="Decomposition2" description="" srcid="12" destid="1"/>
+        <decomposition name="Decomposition3" description="" srcid="13" destid="2"/>
+        <decomposition name="Decomposition4" description="" srcid="14" destid="2"/>
+        <decomposition name="Decomposition5" description="" srcid="15" destid="3"/>
+        <decomposition name="Decomposition6" description="" srcid="16" destid="3"/>
+        <decomposition name="Decomposition7" description="" srcid="17" destid="4"/>
+        <decomposition name="Decomposition8" description="" srcid="18" destid="4"/>
+        <decomposition name="Decomposition9" description="" srcid="19" destid="5"/>
+        <decomposition name="Decomposition10" description="" srcid="20" destid="5"/>
+        <decomposition name="Decomposition11" description="" srcid="21" destid="6"/>
+        <decomposition name="Decomposition12" description="" srcid="22" destid="6"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Developer" description="Actor responsible for software development tasks"/>
+        <actor id="2" name="Researcher" description="Actor involved in research activities"/>
+        <actor id="3" name="Publisher" description="Actor responsible for publishing tasks"/>
+        <actor id="4" name="Researcher Publisher" description="Actor with combined research and publishing roles"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="11"/>
+        <actorContIE actor="1" ie="12"/>
+        <actorContIE actor="1" ie="13"/>
+        <actorContIE actor="1" ie="14"/>
+        <actorContIE actor="1" ie="15"/>
+        <actorContIE actor="1" ie="16"/>
+        <actorContIE actor="1" ie="17"/>
+        <actorContIE actor="1" ie="18"/>
+        <actorContIE actor="1" ie="19"/>
+        <actorContIE actor="1" ie="20"/>
+        <actorContIE actor="1" ie="21"/>
+        <actorContIE actor="1" ie="22"/>
+        <actorContIE actor="2" ie="12"/>
+        <actorContIE actor="2" ie="13"/>
+        <actorContIE actor="2" ie="14"/>
+        <actorContIE actor="2" ie="21"/>
+        <actorContIE actor="2" ie="22"/>
+        <actorContIE actor="3" ie="3"/>
+        <actorContIE actor="3" ie="4"/>
+        <actorContIE actor="3" ie="19"/>
+        <actorContIE actor="3" ie="20"/>
+        <actorContIE actor="4" ie="6"/>
+    </actor-IE-link-def>
+</grl-catalog>

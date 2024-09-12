@@ -1,0 +1,67 @@
+<grl-catalog catalog-name="UserStoryCatalog" description="Catalog of User Story Elements" author="Assistant">
+    <element-def>
+        <intentional-element id="1" name="Make updates to the SQL codes for clarity" type="Task" decompositiontype="AND"/>
+        <intentional-element id="2" name="Review existing SQL codes" type="Task" decompositiontype="AND"/>
+        <intentional-element id="3" name="Implement code updates" type="Task" decompositiontype="AND"/>
+        <intentional-element id="4" name="Have all derived data elements derived properly" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Review current data derivation process" type="Task" decompositiontype="AND"/>
+        <intentional-element id="6" name="Implement data validation checks" type="Task" decompositiontype="AND"/>
+        <intentional-element id="7" name="Ensure completeness of derived data elements" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Identify missing data elements in the derivation process" type="Task" decompositiontype="AND"/>
+        <intentional-element id="9" name="Develop mechanisms to incorporate all required data elements" type="Task" decompositiontype="AND"/>
+        <intentional-element id="10" name="Validate correctness of derivation logic for specific cases" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Define test scenarios for the 00***** and 00FORGN PPoPCode cases" type="Task" decompositiontype="AND"/>
+        <intentional-element id="12" name="Implement logic for specific cases in the derivation process" type="Task" decompositiontype="AND"/>
+        <intentional-element id="13" name="Enhance user understanding of office names" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="14" name="Analyze current office code to name mapping mechanism" type="Task" decompositiontype="AND"/>
+        <intentional-element id="15" name="Develop a user-friendly display for office names" type="Task" decompositiontype="AND"/>
+        <intentional-element id="16" name="Begin user testing" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="17" name="Prepare test cases" type="Task" decompositiontype="AND"/>
+        <intentional-element id="18" name="Execute user testing" type="Task" decompositiontype="AND"/>
+        <intentional-element id="19" name="Ensure that attempts to correct or delete non-existent records do not create new published data" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="20" name="Implement verification checks for record existence" type="Task" decompositiontype="AND"/>
+        <intentional-element id="21" name="Enhance error handling mechanisms" type="Task" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="5" destid="4" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="5" destid="6" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="8" destid="7" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="8" destid="9" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="11" destid="10" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="11" destid="12" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution7" description="" srcid="14" destid="13" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution8" description="" srcid="14" destid="15" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution9" description="" srcid="17" destid="16" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution10" description="" srcid="17" destid="18" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution11" description="" srcid="20" destid="19" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution12" description="" srcid="20" destid="21" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="5" destid="4"/>
+        <decomposition name="Decomposition2" description="" srcid="8" destid="7"/>
+        <decomposition name="Decomposition3" description="" srcid="11" destid="10"/>
+        <decomposition name="Decomposition4" description="" srcid="14" destid="13"/>
+        <decomposition name="Decomposition5" description="" srcid="17" destid="16"/>
+        <decomposition name="Decomposition6" description="" srcid="20" destid="19"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Broker team member" description=""/>
+        <actor id="2" name="Data user" description=""/>
+        <actor id="3" name="Agency user" description=""/>
+        <actor id="4" name="Developer" description=""/>
+        <actor id="5" name="UI designer" description=""/>
+        <actor id="6" name="SQL developer" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="2" ie="4"/>
+        <actorContIE actor="3" ie="4"/>
+        <actorContIE actor="4" ie="7"/>
+        <actorContIE actor="5" ie="16"/>
+        <actorContIE actor="6" ie="1"/>
+        <actorContIE actor="6" ie="4"/>
+        <actorContIE actor="6" ie="7"/>
+        <actorContIE actor="6" ie="10"/>
+        <actorContIE actor="6" ie="13"/>
+        <actorContIE actor="6" ie="16"/>
+        <actorContIE actor="6" ie="19"/>
+    </actor-IE-link-def>
+</grl-catalog>

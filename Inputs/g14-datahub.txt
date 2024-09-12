@@ -1,0 +1,6 @@
+As a Consumer, I want to view a publisher's profile, so that that I can see who is behind a particular package or to see what other packages they produce. 
+As a Consumer, I want to search among all data packages owned by a publisher, so that that I can easily find one data package amongst all the data packages by this publisher.
+As an Owner, I want to edit my profile, so that that it is updated with new information.
+As an Owner, I want to invite an existing user, so that the user can become a member of my publisher.
+As an owner, I want to remove someone from membership in my publisher, so that they no longer have ability to publish or modify my data packages.
+As an owner, I want to view all the people in my organization and what roles they have, so that that I can change these if I want.
