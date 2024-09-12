@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="MusicDiscoverySystem" description="Goal Model for a Music Discovery System" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="user" description="Stakeholder of the system" type="Actor"/>
+        <intentional-element id="2" name="search operations conducted" description="Perform search operations" type="Goal"/>
+        <intentional-element id="3" name="upload operations conducted" description="Perform upload operations" type="Goal"/>
+        <intentional-element id="4" name="view operations conducted" description="Perform view operations" type="Goal"/>
+        <intentional-element id="5" name="receive operations conducted" description="Perform receive operations" type="Goal"/>
+        <intentional-element id="6" name="a given music video searched" description="Search for a specific music video" type="Goal"/>
+        <intentional-element id="7" name="upload tagged videos" description="Upload videos with associated tags" type="Goal"/>
+        <intentional-element id="8" name="view thumbnail sequences" description="View thumbnail sequences of videos" type="Goal"/>
+        <intentional-element id="9" name="content recommendations received" description="Receive content recommendations" type="Goal"/>
+        <intentional-element id="10" name="search and discover music using content identification or fingerprinting" description="Search and discover music using identification or fingerprinting" type="Softgoal"/>
+        <intentional-element id="11" name="search and discover music based on user profile" description="Search and discover music based on user profile" type="Softgoal"/>
+        <intentional-element id="12" name="search and discover music based on other users similar to myself" description="Search and discover music based on similar users" type="Softgoal"/>
+        <intentional-element id="13" name="search and discover music or ringback tones similar to a given music video based on content similarity" description="Search and discover similar music or ringback tones" type="Softgoal"/>
+        <intentional-element id="14" name="search and discover music by exploiting enriched metadata and image tags" description="Search and discover music using enriched metadata" type="Softgoal"/>
+        <intentional-element id="15" name="upload tagged videos and have tags available for all further processing steps" description="Upload tagged videos and maintain tags for processing" type="Softgoal"/>
+        <intentional-element id="16" name="Improve music search accuracy" description="Enhance accuracy of music search operations" type="Softgoal"/>
+        <intentional-element id="17" name="Enhance user experience in music discovery" description="Improve user experience in discovering music" type="Softgoal"/>
+        <intentional-element id="18" name="Increase user engagement with recommended content" description="Boost user engagement with recommended content" type="Softgoal"/>
+        <intentional-element id="19" name="Ensure efficient tagging and metadata extraction process" description="Maintain efficiency in tagging and metadata extraction" type="Softgoal"/>
+        <intentional-element id="20" name="Implement content identification or fingerprinting algorithm" description="Create algorithm for content identification" type="Task"/>
+        <intentional-element id="21" name="Integrate algorithm with music search functionality" description="Incorporate identification algorithm with music search" type="Task"/>
+        <intentional-element id="22" name="Develop user profile creation mechanism" description="Establish mechanism for creating user profiles" type="Task"/>
+        <intentional-element id="23" name="Implement personalized music recommendations based on user profile" description="Generate personalized music recommendations" type="Task"/>
+        <intentional-element id="24" name="Establish similarity criteria among users" description="Define criteria for user similarity" type="Task"/>
+        <intentional-element id="25" name="Generate recommendations based on similar users" description="Provide recommendations based on similar users" type="Task"/>
+        <intentional-element id="26" name="Develop content similarity algorithm" description="Create algorithm for content similarity" type="Task"/>
+        <intentional-element id="27" name="Provide recommendations based on content similarity" description="Offer recommendations based on content similarity" type="Task"/>
+        <intentional-element id="28" name="Implement metadata and image tag extraction" description="Develop extraction mechanism for metadata and image tags" type="Task"/>
+        <intentional-element id="29" name="Utilize extracted data for music search and discovery" description="Use extracted data for music search and discovery" type="Task"/>
+        <intentional-element id="30" name="Develop video upload feature" description="Create feature for uploading videos" type="Task"/>
+        <intentional-element id="31" name="Ensure tags are properly associated with uploaded videos" description="Maintain correct tag association for uploaded videos" type="Task"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="20" destid="16" contributiontype="AND"/>
+        <contribution name="Contribution2" description="" srcid="21" destid="16" contributiontype="AND"/>
+        <contribution name="Contribution3" description="" srcid="22" destid="17" contributiontype="HURT"/>
+        <contribution name="Contribution4" description="" srcid="23" destid="17" contributiontype="HELP"/>
+        <contribution name="Contribution5" description="" srcid="24" destid="12" contributiontype="AND"/>
+        <contribution name="Contribution6" description="" srcid="25" destid="12" contributiontype="AND"/>
+        <contribution name="Contribution7" description="" srcid="26" destid="13" contributiontype="AND"/>
+        <contribution name="Contribution8" description="" srcid="27" destid="13" contributiontype="AND"/>
+        <contribution name="Contribution9" description="" srcid="28" destid="14" contributiontype="AND"/>
+        <contribution name="Contribution10" description="" srcid="29" destid="14" contributiontype="AND"/>
+        <contribution name="Contribution11" description="" srcid="30" destid="15" contributiontype="AND"/>
+        <contribution name="Contribution12" description="" srcid="31" destid="15" contributiontype="AND"/>
+        <decomposition name="Decomposition1" description="" srcid="20" destid="1"/>
+        <decomposition name="Decomposition2" description="" srcid="21" destid="1"/>
+        <decomposition name="Decomposition3" description="" srcid="22" destid="1"/>
+        <decomposition name="Decomposition4" description="" srcid="23" destid="1"/>
+        <decomposition name="Decomposition5" description="" srcid="24" destid="1"/>
+        <decomposition name="Decomposition6" description="" srcid="25" destid="1"/>
+        <decomposition name="Decomposition7" description="" srcid="26" destid="1"/>
+        <decomposition name="Decomposition8" description="" srcid="27" destid="1"/>
+        <decomposition name="Decomposition9" description="" srcid="28" destid="1"/>
+        <decomposition name="Decomposition10" description="" srcid="29" destid="1"/>
+        <decomposition name="Decomposition11" description="" srcid="30" destid="1"/>
+        <decomposition name="Decomposition12" description="" srcid="31" destid="1"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="user" description="Stakeholder of the system"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="1" ie="5"/>
+        <actorContIE actor="1" ie="6"/>
+        <actorContIE actor="1" ie="7"/>
+        <actorContIE actor="1" ie="8"/>
+        <actorContIE actor="1" ie="9"/>
+        <actorContIE actor="1" ie="10"/>
+        <actorContIE actor="1" ie="11"/>
+        <actorContIE actor="1" ie="12"/>
+        <actorContIE actor="1" ie="13"/>
+        <actorContIE actor="1" ie="14"/>
+        <actorContIE actor="1" ie="15"/>
+    </actor-IE-link-def>
+</grl-catalog>
+</xml>

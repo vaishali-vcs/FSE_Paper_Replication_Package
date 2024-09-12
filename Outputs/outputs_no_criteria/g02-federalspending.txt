@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="SoftwareProject" description="System Requirements for Software Project" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Improve clarity of SQL codes" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2" name="Ensure proper derivation of all data elements" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="3" name="Enhance the derivation logic for 00***** and 00FORGN PPoPCode cases" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4" name="Achieve accurate derivation of office names from office codes" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="5" name="Validate stakeholder UI improvement requests" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="6" name="Maintain data integrity by preventing creation of new published data from non-existent records" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="7" name="Review existing SQL codes" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="8" name="Identify areas for improvement" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="9" name="Modify SQL codes for better clarity" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="10" name="Review current data derivation processes" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="11" name="Identify missing derived data elements" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="12" name="Update data derivation documentation" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="13" name="Analyze requirements for including 00***** and 00FORGN PPoPCode cases" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="14" name="Incorporate the 00***** case in the derivation process" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="15" name="Integrate the 00FORGN PPoPCode case into the derivation logic" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="16" name="Define mapping rules between office codes and office names" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="17" name="Implement the logic for deriving office names from office codes" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="18" name="Gather UI improvement requests from stakeholders" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="19" name="Prioritize UI enhancement tasks based on stakeholder feedback" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="20" name="Develop prototypes or mockups for proposed UI changes" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="21" name="Conduct usability testing with stakeholders" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="22" name="Implement validation checks for existing records before deletion" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="23" name="Define the process for handling correction or deletion of non-existent records" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="24" name="Test the system to validate the prevention of new data creation" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="25" name="Review existing data derivation processes" description="" type="Task" decompositiontype="And"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="7" destid="1" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="10" destid="2" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="10" destid="12" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="13" destid="3" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="16" destid="4" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="18" destid="5" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution7" description="" srcid="22" destid="6" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="7" destid="1"/>
+        <decomposition name="Decomposition2" description="" srcid="8" destid="1"/>
+        <decomposition name="Decomposition3" description="" srcid="9" destid="1"/>
+        <decomposition name="Decomposition4" description="" srcid="10" destid="2"/>
+        <decomposition name="Decomposition5" description="" srcid="11" destid="2"/>
+        <decomposition name="Decomposition6" description="" srcid="12" destid="2"/>
+        <decomposition name="Decomposition7" description="" srcid="13" destid="3"/>
+        <decomposition name="Decomposition8" description="" srcid="14" destid="3"/>
+        <decomposition name="Decomposition9" description="" srcid="15" destid="3"/>
+        <decomposition name="Decomposition10" description="" srcid="16" destid="4"/>
+        <decomposition name="Decomposition11" description="" srcid="17" destid="4"/>
+        <decomposition name="Decomposition12" description="" srcid="18" destid="5"/>
+        <decomposition name="Decomposition13" description="" srcid="19" destid="5"/>
+        <decomposition name="Decomposition14" description="" srcid="20" destid="5"/>
+        <decomposition name="Decomposition15" description="" srcid="21" destid="5"/>
+        <decomposition name="Decomposition16" description="" srcid="22" destid="6"/>
+        <decomposition name="Decomposition17" description="" srcid="23" destid="6"/>
+        <decomposition name="Decomposition18" description="" srcid="24" destid="6"/>
+        <decomposition name="Decomposition19" description="" srcid="25" destid="2"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Broker team member" description=""/>
+        <actor id="2" name="Data user" description=""/>
+        <actor id="3" name="Developer" description=""/>
+        <actor id="4" name="UI designer" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="2" ie="2"/>
+        <actorContIE actor="3" ie="3"/>
+        <actorContIE actor="4" ie="5"/>
+        <actorContIE actor="4" ie="18"/>
+    </actor-IE-link-def>
+</grl-catalog>

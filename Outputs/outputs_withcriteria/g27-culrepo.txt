@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grl-catalog catalog-name="UserStories" description="GRL model based on user stories" author="Engineer">
+    <element-def>
+        <intentional-element id="1" name="maintain versioning of Extension brochures and FAQs" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="2" name="discover items in the repository through the library's discovery system and Google" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="3" name="see descriptive metadata for the item" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="4" name="contact the author of a work" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="receive updates when new works are published" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="6" name="search for report or dataset with keywords or a partial or complete title to locate needed report or dataset" description="" type="Goal" decompositiontype="AND"/>
+
+        <intentional-element id="7" name="Ensure version control accuracy and reliability" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Enhance content discoverability and accessibility" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Improve communication and collaboration between researchers" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Enhance user experience and satisfaction" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Optimize search functionality for efficiency and effectiveness" description="" type="Softgoal" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="6" destid="11" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="5" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="4" destid="9" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="3" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="2" destid="8" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="1" destid="7" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+
+        <decomposition name="Decomposition1" description="" srcid="6" destid="1"/>
+        <decomposition name="Decomposition2" description="" srcid="2" destid="8"/>
+        <decomposition name="Decomposition3" description="" srcid="3" destid="10"/>
+        <decomposition name="Decomposition4" description="" srcid="4" destid="9"/>
+        <decomposition name="Decomposition5" description="" srcid="5" destid="10"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="faculty member" description="Faculty member of CCE Educators"/>
+        <actor id="2" name="researcher" description="Researcher using the repository and Google"/>
+        <actor id="3" name="patron" description="Patron searching for reports or datasets"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="2" ie="2"/>
+        <actorContIE actor="3" ie="6"/>
+    </actor-IE-link-def>
+</grl-catalog>
+

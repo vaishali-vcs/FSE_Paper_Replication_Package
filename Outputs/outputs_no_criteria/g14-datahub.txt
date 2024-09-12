@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStories" description="Catalog of User Stories and Intentional Elements">
+    <element-def>
+        <intentional-element id="1" name="View a publisher's profile" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2" name="Search among all data packages owned by a publisher" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="3" name="Edit my profile" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4" name="Invite an existing user" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="5" name="Remove someone from membership in my publisher" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="6" name="View all the people in my organization and their roles" description="" type="Goal" decompositiontype="And"/>
+
+        <intentional-element id="7" name="Improve user experience in viewing publisher profiles" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="8" name="Enhance search functionality for easier data package discovery" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="9" name="Ensure profile editing is user-friendly and intuitive" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="10" name="Facilitate seamless user invitation process" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="11" name="Maintain efficient organization member management" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="12" name="Enhance visibility of roles within the organization" description="" type="Softgoal" decompositiontype="And"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="1" destid="7" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="2" destid="8" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="3" destid="9" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="4" destid="10" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="5" destid="11" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="6" destid="12" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+
+        <dependency name="Dependency1" description="" dependerid="1" dependeeid="7"/>
+        <dependency name="Dependency2" description="" dependerid="2" dependeeid="8"/>
+        <dependency name="Dependency3" description="" dependerid="3" dependeeid="9"/>
+        <dependency name="Dependency4" description="" dependerid="4" dependeeid="10"/>
+        <dependency name="Dependency5" description="" dependerid="5" dependeeid="11"/>
+        <dependency name="Dependency6" description="" dependerid="6" dependeeid="12"/>
+    </link-def>
+</grl-catalog>

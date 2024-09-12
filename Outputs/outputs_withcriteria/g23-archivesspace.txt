@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="RequirementsEngineerCatalog" description="Catalog containing intentional elements and their relationships" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Import Accessions data in CSV" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="2" name="Specify the Source for a Name Form of an Agent and add new Sources and edit existing Sources" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="3" name="Create and edit Agent records" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="4" name="Create and edit a Resource record" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="5" name="Associate a Subject record with a Resource description" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="6" name="Assign Location information to a Container" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="7" name="Ensure data import accuracy" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Enhance user experience in specifying Source for a Name Form of an Agent" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Improve efficiency in creating and editing Agent records" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Enhance system usability for creating and editing Resource records" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Optimize process for associating Subject records with Resource descriptions" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="12" name="Ensure accurate assignment of Location information to Containers" description="" type="Softgoal" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="1" destid="7" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="2" destid="8" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="3" destid="9" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="4" destid="10" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="5" destid="11" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="6" destid="12" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="3" destid="9"/>
+        <decomposition name="Decomposition2" description="" srcid="4" destid="10"/>
+        <decomposition name="Decomposition3" description="" srcid="5" destid="11"/>
+        <decomposition name="Decomposition4" description="" srcid="6" destid="12"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Archivist" description="Role responsible for managing archival tasks"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="1" ie="5"/>
+        <actorContIE actor="1" ie="6"/>
+        <actorContIE actor="1" ie="7"/>
+        <actorContIE actor="1" ie="8"/>
+        <actorContIE actor="1" ie="9"/>
+        <actorContIE actor="1" ie="10"/>
+        <actorContIE actor="1" ie="11"/>
+        <actorContIE actor="1" ie="12"/>
+    </actor-IE-link-def>
+</grl-catalog>

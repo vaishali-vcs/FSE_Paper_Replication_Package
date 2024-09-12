@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStories" description="Goal Model based on User Stories" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="Maintain versioning of Extension brochures and FAQs" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2" name="Ease of access to Extension brochures and FAQs" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="3" name="Implement version control system for brochures and FAQs" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="4" name="Track changes and updates to brochures and FAQs" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="5" name="Ensure only the most current versions are accessible to CCE Educators" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="6" name="Discover items in the repository through the library's discovery system and Google" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="7" name="Improve discoverability of items in the repository" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="8" name="Implement search functionality within the repository" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="9" name="Integrate with library's discovery system" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="10" name="Optimize content for search engine indexing" description="" type="Task" decompositiontype="And"/>
+        <!-- Additional intentional elements can be added for the remaining user stories-->
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="3" destid="2" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="8" destid="7" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="9" destid="7" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <!-- Additional contribution links can be added for the remaining intentional elements-->
+        <decomposition name="Decomposition1" description="" srcid="1" destid="2"/>
+        <decomposition name="Decomposition2" description="" srcid="1" destid="4"/>
+        <decomposition name="Decomposition3" description="" srcid="6" destid="7"/>
+        <decomposition name="Decomposition4" description="" srcid="6" destid="9"/>
+        <!-- Additional decomposition links can be added for the remaining intentional elements-->
+        <dependency name="Dependency1" description="" dependerid="7" dependeeid="2"/>
+        <dependency name="Dependency2" description="" dependerid="9" dependeeid="7"/>
+        <!-- Additional dependency links can be added for the remaining intentional elements-->
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Faculty Member" description="Faculty member at the institution"/>
+        <actor id="2" name="Researcher" description="Researcher in the academic field"/>
+        <!-- Additional actors can be added here-->
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <!-- Links between actors and intentional elements for the remaining elements-->
+    </actor-IE-link-def>
+</grl-catalog>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="ResearcherRequirements" description="Goal model based on researcher user stories" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="researcher" description="" type="Actor"/>
+        <intentional-element id="2" name="access operations conducted" description="" type="Goal"/>
+        <intentional-element id="3" name="have operations conducted" description="" type="Goal"/>
+        <intentional-element id="4" name="search operations conducted" description="" type="Goal"/>
+        <intentional-element id="5" name="access digitized archival materials" description="" type="Goal"/>
+        <intentional-element id="6" name="access educational outreach materials" description="" type="Goal"/>
+        <intentional-element id="7" name="structured data searched" description="" type="Goal"/>
+        <intentional-element id="8" name="photo collection images searched" description="" type="Goal"/>
+        <intentional-element id="9" name="have accurate cross-collection citation information" description="" type="Goal"/>
+        <intentional-element id="10" name="improve search accuracy" description="" type="Softgoal"/>
+        <intentional-element id="11" name="enhance user experience in accessing materials" description="" type="Softgoal"/>
+        <intentional-element id="12" name="ensure data reliability and integrity" description="" type="Softgoal"/>
+        <intentional-element id="13" name="promote efficient information retrieval" description="" type="Softgoal"/>
+        <intentional-element id="14" name="foster user engagement with materials" description="" type="Softgoal"/>
+        <intentional-element id="15" name="retrieve photo collection images" description="" type="Task"/>
+        <intentional-element id="16" name="index photo collection images" description="" type="Task"/>
+        <intentional-element id="17" name="display search results" description="" type="Task"/>
+        <intentional-element id="18" name="parse structured data" description="" type="Task"/>
+        <intentional-element id="19" name="implement search algorithm" description="" type="Task"/>
+        <intentional-element id="20" name="filter search results based on structured data" description="" type="Task"/>
+        <intentional-element id="21" name="retrieve tagged working papers" description="" type="Task"/>
+        <intentional-element id="22" name="categorize working papers" description="" type="Task"/>
+        <intentional-element id="23" name="provide access to working papers" description="" type="Task"/>
+        <intentional-element id="24" name="retrieve educational outreach materials" description="" type="Task"/>
+        <intentional-element id="25" name="organize materials by topic" description="" type="Task"/>
+        <intentional-element id="26" name="present educational outreach materials" description="" type="Task"/>
+        <intentional-element id="27" name="collect citation information" description="" type="Task"/>
+        <intentional-element id="28" name="verify citation accuracy" description="" type="Task"/>
+        <intentional-element id="29" name="store citation information securely" description="" type="Task"/>
+        <intentional-element id="30" name="retrieve digitized archival materials" description="" type="Task"/>
+        <intentional-element id="31" name="grant direct access without mediation" description="" type="Task"/>
+        <intentional-element id="32" name="track user interaction with archival materials" description="" type="Task"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="15" destid="10" contributiontype="HELP"/>
+        <contribution name="Contribution2" description="" srcid="16" destid="10" contributiontype="HELP"/>
+        <contribution name="Contribution3" description="" srcid="17" destid="10" contributiontype="HELP"/>
+        <contribution name="Contribution4" description="" srcid="18" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution5" description="" srcid="19" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution6" description="" srcid="20" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution7" description="" srcid="21" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution8" description="" srcid="22" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution9" description="" srcid="23" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution10" description="" srcid="24" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution11" description="" srcid="25" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution12" description="" srcid="26" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution13" description="" srcid="27" destid="12" contributiontype="HELP"/>
+        <contribution name="Contribution14" description="" srcid="28" destid="12" contributiontype="HELP"/>
+        <contribution name="Contribution15" description="" srcid="29" destid="12" contributiontype="HELP"/>
+        <contribution name="Contribution16" description="" srcid="30" destid="13" contributiontype="HELP"/>
+        <contribution name="Contribution17" description="" srcid="31" destid="13" contributiontype="HELP"/>
+        <contribution name="Contribution18" description="" srcid="32" destid="13" contributiontype="HELP"/>
+        <decomposition name="Decomposition1" description="" srcid="2" destid="15"/>
+        <decomposition name="Decomposition2" description="" srcid="2" destid="16"/>
+        <decomposition name="Decomposition3" description="" srcid="2" destid="17"/>
+        <decomposition name="Decomposition4" description="" srcid="3" destid="18"/>
+        <decomposition name="Decomposition5" description="" srcid="3" destid="19"/>
+        <decomposition name="Decomposition6" description="" srcid="3" destid="20"/>
+        <decomposition name="Decomposition7" description="" srcid="4" destid="21"/>
+        <decomposition name="Decomposition8" description="" srcid="4" destid="22"/>
+        <decomposition name="Decomposition9" description="" srcid="4" destid="23"/>
+        <decomposition name="Decomposition10" description="" srcid="5" destid="24"/>
+        <decomposition name="Decomposition11" description="" srcid="5" destid="25"/>
+        <decomposition name="Decomposition12" description="" srcid="5" destid="26"/>
+        <decomposition name="Decomposition13" description="" srcid="6" destid="27"/>
+        <decomposition name="Decomposition14" description="" srcid="6" destid="28"/>
+        <decomposition name="Decomposition15" description="" srcid="6" destid="29"/>
+        <decomposition name="Decomposition16" description="" srcid="7" destid="30"/>
+        <decomposition name="Decomposition17" description="" srcid="7" destid="31"/>
+        <decomposition name="Decomposition18" description="" srcid="7" destid="32"/>
+    </link-def>
+</grl-catalog>

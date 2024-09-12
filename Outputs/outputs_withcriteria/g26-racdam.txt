@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="ResearchGoals" description="Initial goal model based on user stories" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="researcher" description="Primary stakeholder" type="Actor"/>
+        <intentional-element id="2" name="access operations conducted" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="3" name="have operations conducted" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="4" name="search operations conducted" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="access digitized archival materials" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="6" name="access educational outreach materials" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="7" name="structured data searched" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="8" name="photo collection images searched" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="9" name="have accurate cross-collection citation information" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="10" name="improved research process" description="" type="Softgoal"/>
+        <intentional-element id="11" name="enhanced decision-making" description="" type="Softgoal"/>
+        <intentional-element id="12" name="efficient retrieval of materials" description="" type="Softgoal"/>
+        <intentional-element id="13" name="seamless access to information" description="" type="Softgoal"/>
+        <intentional-element id="14" name="accurate citation management" description="" type="Softgoal"/>
+        <intentional-element id="15" name="enhanced research outcomes" description="" type="Softgoal"/>
+        <intentional-element id="16" name="implement a search functionality for photo collection images" description="" type="Task"/>
+        <intentional-element id="17" name="develop a system for accessing tagged working papers" description="" type="Task"/>
+        <intentional-element id="18" name="provide accurate cross-collection citation information system" description="" type="Task"/>
+        <intentional-element id="19" name="create a system for accessing digitized archival materials without mediation" description="" type="Task"/>
+        <intentional-element id="20" name="develop a system for accessing educational outreach materials" description="" type="Task"/>
+        <intentional-element id="21" name="implement search functionality using structured data" description="" type="Task"/>
+        <intentional-element id="22" name="develop a system for searching across photo collection images" description="" type="Task"/>
+        <intentional-element id="23" name="provide user-friendly interfaces for efficient research navigation" description="" type="Task"/>
+        <intentional-element id="24" name="implement a personalized recommendation system for relevant materials" description="" type="Task"/>
+        <intentional-element id="25" name="optimize search algorithms for quick and accurate results" description="" type="Task"/>
+        <intentional-element id="26" name="implement filters for refined search options" description="" type="Task"/>
+        <intentional-element id="27" name="provide a tagging system for easy categorization and retrieval" description="" type="Task"/>
+        <intentional-element id="28" name="develop a user-friendly interface for easy navigation of resources" description="" type="Task"/>
+        <intentional-element id="29" name="ensure compatibility with various devices for seamless access" description="" type="Task"/>
+        <intentional-element id="30" name="establish a secure login system for personalized access" description="" type="Task"/>
+        <intentional-element id="31" name="implement an automated citation generation feature" description="" type="Task"/>
+        <intentional-element id="32" name="provide tools for citation verification and correction" description="" type="Task"/>
+        <intentional-element id="33" name="integrate citation management services for easy referencing" description="" type="Task"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="Researcher makes a positive contribution to improved research process" srcid="1" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="Researcher makes a positive contribution to enhanced decision-making" srcid="1" destid="11" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="Researcher makes a positive contribution to efficient retrieval of materials" srcid="1" destid="12" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="Researcher makes a positive contribution to seamless access to information" srcid="1" destid="13" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="Researcher makes a positive contribution to accurate citation management" srcid="1" destid="14" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="Researcher makes a positive contribution to enhanced research outcomes" srcid="1" destid="15" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution7" description="Improved research process contributes positively to efficient retrieval of materials" srcid="10" destid="12" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution8" description="Enhanced decision-making contributes positively to improved research process" srcid="11" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution9" description="Enhanced decision-making contributes positively to efficient retrieval of materials" srcid="11" destid="12" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution10" description="Efficient retrieval of materials contributes positively to improved research process" srcid="12" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution11" description="Efficient retrieval of materials contributes positively to enhanced decision-making" srcid="12" destid="11" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution12" description="Seamless access to information contributes positively to efficient retrieval of materials" srcid="13" destid="12" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution13" description="Seamless access to information contributes positively to enhanced decision-making" srcid="13" destid="11" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution14" description="Seamless access to information contributes positively to access operations conducted" srcid="13" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution15" description="Accurate citation management contributes positively to seamless access to information" srcid="14" destid="13" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution16" description="Accurate citation management contributes positively to enhanced decision-making" srcid="14" destid="11" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution17" description="Accurate citation management contributes positively to access operations conducted" srcid="14" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution18" description="Enhanced research outcomes contributes positively to accurate citation management" srcid="15" destid="14" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="Researcher depends on search operations conducted" srcid="1" destid="4"/>
+        <decomposition name="Decomposition2" description="Researcher depends on access operations conducted" srcid="1" destid="2"/>
+        <decomposition name="Decomposition3" description="Researcher depends on have operations conducted" srcid="1" destid="3"/>
+        <decomposition name="Decomposition4" description="Researcher depends on access digitized archival materials" srcid="1" destid="5"/>
+        <decomposition name="Decomposition5" description="Researcher depends on access educational outreach materials" srcid="1" destid="6"/>
+        <decomposition name="Decomposition6" description="Researcher depends on structured data searched" srcid="1" destid="7"/>
+        <decomposition name="Decomposition7" description="Researcher depends on photo collection images searched" srcid="1" destid="8"/>
+        <decomposition name="Decomposition8" description="Researcher depends on have accurate cross-collection citation information" srcid="1" destid="9"/>
+        <decomposition name="Decomposition9" description="Improved research process depends on efficient retrieval of materials" srcid="10" destid="12"/>
+        <decomposition name="Decomposition10" description="Enhanced decision-making depends on improved research process" srcid="11" destid="10"/>
+        <decomposition name="Decomposition11" description="Enhanced decision-making depends on efficient retrieval of materials" srcid="11" destid="12"/>
+        <decomposition name="Decomposition12" description="Efficient retrieval of materials depends on improved research process" srcid="12" destid="10"/>
+        <decomposition name="Decomposition13" description="Efficient retrieval of materials depends on enhanced decision-making" srcid="12" destid="11"/>
+        <decomposition name="Decomposition14" description="Seamless access to information depends on efficient retrieval of materials" srcid="13" destid="12"/>
+        <decomposition name="Decomposition15" description="Seamless access to information depends on enhanced decision-making" srcid="13" destid="11"/>
+        <decomposition name="Decomposition16" description="Seamless access to information depends on access operations conducted" srcid="13" destid="2"/>
+        <decomposition name="Decomposition17" description="Accurate citation management depends on seamless access to information" srcid="14" destid="13"/>
+        <decomposition name="Decomposition18" description="Accurate citation management depends on enhanced decision-making" srcid="14" destid="11"/>
+        <decomposition name="Decomposition19" description="Accurate citation management depends on access operations conducted" srcid="14" destid="2"/>
+    </link-def>
+    <actor-def>
+        <actor id="2" name="system" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="1" ie="5"/>
+        <actorContIE actor="1" ie="6"/>
+        <actorContIE actor="1" ie="7"/>
+        <actorContIE actor="1" ie="8"/>
+        <actorContIE actor="1" ie="9"/>
+        <actorContIE actor="1" ie="10"/>
+        <actorContIE actor="1" ie="11"/>
+        <actorContIE actor="1" ie="12"/>
+        <actorContIE actor="1" ie="13"/>
+        <actorContIE actor="1" ie="14"/>
+        <actorContIE actor="1" ie="15"/>
+        <actorContIE actor="1" ie="16"/>
+        <actorContIE actor="1" ie="17"/>
+        <actorContIE actor="1" ie="18"/>
+        <actorContIE actor="1" ie="19"/>
+        <actorContIE actor="1" ie="20"/>
+        <actorContIE actor="1" ie="21"/>
+        <actorContIE actor="1" ie="22"/>
+        <actorContIE actor="1" ie="23"/>
+        <actorContIE actor="1" ie="24"/>
+        <actorContIE actor="1" ie="25"/>
+        <actorContIE actor="1" ie="26"/>
+        <actorContIE actor="1" ie="27"/>
+        <actorContIE actor="1" ie="28"/>
+        <actorContIE actor="1" ie="29"/>
+        <actorContIE actor="1" ie="30"/>
+        <actorContIE actor="1" ie="31"/>
+        <actorContIE actor="1" ie="32"/>
+        <actorContIE actor="1" ie="33"/>
+        <actorContIE actor="2" ie="2"/>
+    </actor-IE-link-def>
+</grl-catalog>

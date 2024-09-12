@@ -1,0 +1,58 @@
+<grl-catalog catalog-name="HealthMonitorSystem" description="Catalog for the Health Monitoring System" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="UserComfortDuringVitalParameterMeasurements" description="Ensure user comfort during vital parameter measurements" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="2" name="EnhanceUserEngagementDuringGameRecommendations" description="Enhance user engagement during game recommendations" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="3" name="DetermineUserBloodPressure" description="Determine the user's blood pressure" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="4" name="DetermineUserBodyTemperature" description="Determine the user's body temperature" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="DetermineUserHeartRate" description="Determine the user's heart rate" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="6" name="DetermineUserBreathingFrequency" description="Determine the user's breathing frequency" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="7" name="FeedbackOnActivityLevelOfUser" description="Have feedback on the activity level of the user" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="8" name="ProposeGames" description="Propose games that require the combination of mental and physical exercise" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="9" name="BloodPressureMonitoringSensor" description="Blood pressure monitoring sensor" type="Resource"/>
+        <intentional-element id="10" name="TemperatureSensor" description="Temperature sensor" type="Resource"/>
+        <intentional-element id="11" name="HeartRateMonitoringSensor" description="Heart rate monitoring sensor" type="Resource"/>
+        <intentional-element id="12" name="BreathingFrequencySensor" description="Breathing frequency sensor" type="Resource"/>
+        <intentional-element id="13" name="ActivityMonitoringSystem" description="Activity monitoring system" type="Resource"/>
+        <intentional-element id="14" name="GameRecommendationSystem" description="Game recommendation system" type="Resource"/>
+        <intentional-element id="15" name="UserActivityAnalysis" description="User activity analysis" type="Task"/>
+        <intentional-element id="16" name="ActivityLevelFeedbackGeneration" description="Activity level feedback generation" type="Task"/>
+        <intentional-element id="17" name="GameIdentification" description="Game identification" type="Task"/>
+        <intentional-element id="18" name="MentalPhysicalExerciseGameSuggestion" description="Mental and physical exercise game suggestion" type="Task"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="1" destid="3" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="2" destid="8" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="2" destid="7" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="1" destid="4" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="1" destid="5" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="1" destid="6" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution7" description="" srcid="2" destid="13" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution8" description="" srcid="2" destid="14" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="15" destid="7"/>
+        <decomposition name="Decomposition2" description="" srcid="16" destid="7"/>
+        <decomposition name="Decomposition3" description="" srcid="17" destid="8"/>
+        <decomposition name="Decomposition4" description="" srcid="18" destid="8"/>
+        <dependency name="Dependency1" description="" dependerid="3" dependeeid="9"/>
+        <dependency name="Dependency2" description="" dependerid="4" dependeeid="10"/>
+        <dependency name="Dependency3" description="" dependerid="5" dependeeid="11"/>
+        <dependency name="Dependency4" description="" dependerid="6" dependeeid="12"/>
+        <dependency name="Dependency5" description="" dependerid="7" dependeeid="13"/>
+        <dependency name="Dependency6" description="" dependerid="8" dependeeid="14"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="MedicalCaregiver" description="Medical caregiver who interacts with the health monitoring system"/>
+        <actor id="2" name="ALFRED" description="Virtual assistant providing game recommendations"/>
+        <actor id="3" name="OlderPerson" description="Primary user of the health monitoring system"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="1" ie="5"/>
+        <actorContIE actor="1" ie="6"/>
+        <actorContIE actor="1" ie="7"/>
+        <actorContIE actor="2" ie="8"/>
+        <actorContIE actor="2" ie="14"/>
+        <actorContIE actor="3" ie="1"/>
+        <actorContIE actor="3" ie="2"/>
+    </actor-IE-link-def>
+</grl-catalog>

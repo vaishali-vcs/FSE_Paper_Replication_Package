@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStoriesCatalog" description="Catalog of user stories intentional elements" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Invite estimators by providing a URL" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2" name="Start a round by entering an item" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="3" name="Have a list of definitions for commonly used terms" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="4" name="Create database indexes" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="5" name="Import stories from a spreadsheet" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="6" name="Edit an item in the list of items to be estimated" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="7" name="Improve collaboration among team members" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="8" name="Enhance understanding of project terminology" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="9" name="Increase query performance efficiency" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="10" name="Streamline the estimation process" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="11" name="Ensure data integrity and security" description="" type="Softgoal" decompositiontype="And"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="7" destid="8" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="4" destid="9" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="10" destid="7" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="5" destid="10" contributiontype="HURT" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="11" destid="9" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="8" destid="11" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="2" destid="1"/>
+        <decomposition name="Decomposition2" description="" srcid="4" destid="1"/>
+        <decomposition name="Decomposition3" description="" srcid="6" destid="10"/>
+        <dependency name="Dependency1" description="" dependerid="11" dependeeid="9"/>
+    </link-def>
+</grl-catalog>

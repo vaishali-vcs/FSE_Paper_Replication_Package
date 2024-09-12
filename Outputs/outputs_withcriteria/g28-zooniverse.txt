@@ -1,0 +1,53 @@
+<grl-catalog catalog-name="MusicDiscoverySystem" description="Catalog for Music Discovery System" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="content identification or fingerprinting system" description="" type="Resource" decompositiontype="AND"/>
+        <intentional-element id="2" name="music search and discovery using content identification or fingerprinting" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="3" name="profile system" description="" type="Resource" decompositiontype="AND"/>
+        <intentional-element id="4" name="music search and discovery based on user profile" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="recommendation system" description="" type="Resource" decompositiontype="AND"/>
+        <intentional-element id="6" name="music search and discovery based on similarity to other users" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="7" name="content similarity algorithm" description="" type="Resource" decompositiontype="AND"/>
+        <intentional-element id="8" name="music search and discovery based on content similarity to a given music video" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="9" name="metadata and image tagging system" description="" type="Resource" decompositiontype="AND"/>
+        <intentional-element id="10" name="music search and discovery by exploiting enriched metadata and image tags" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="11" name="video tagging feature" description="" type="Resource" decompositiontype="AND"/>
+        <intentional-element id="12" name="upload of tagged videos and availability of tags for further processing steps" description="" type="Goal" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="10" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="8" destid="10" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="6" destid="10" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="4" destid="6" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="2" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="12" destid="12" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="2" destid="1"/>
+        <decomposition name="Decomposition2" description="" srcid="4" destid="3"/>
+        <decomposition name="Decomposition3" description="" srcid="6" destid="5"/>
+        <decomposition name="Decomposition4" description="" srcid="8" destid="7"/>
+        <decomposition name="Decomposition5" description="" srcid="10" destid="9"/>
+        <decomposition name="Decomposition6" description="" srcid="12" destid="11"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="User" description=""/>
+        <actor id="2" name="Content Identification System" description=""/>
+        <actor id="3" name="Profile System" description=""/>
+        <actor id="4" name="Recommendation System" description=""/>
+        <actor id="5" name="Content Similarity Algorithm" description=""/>
+        <actor id="6" name="Metadata and Image Tagging System" description=""/>
+        <actor id="7" name="Video Tagging Feature" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="1" ie="6"/>
+        <actorContIE actor="1" ie="8"/>
+        <actorContIE actor="1" ie="10"/>
+        <actorContIE actor="1" ie="12"/>
+        <actorContIE actor="2" ie="1"/>
+        <actorContIE actor="3" ie="4"/>
+        <actorContIE actor="4" ie="6"/>
+        <actorContIE actor="5" ie="8"/>
+        <actorContIE actor="6" ie="10"/>
+        <actorContIE actor="7" ie="12"/>
+    </actor-IE-link-def>
+</grl-catalog>

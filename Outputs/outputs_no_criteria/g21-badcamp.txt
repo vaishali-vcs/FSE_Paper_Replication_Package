@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="SoftwareRequirements" description="Goal Model for Software Requirements" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Find a link on the sponsorships page to become a $350 level sponsor" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2" name="See a list of attendees associated with a company" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="3" name="Identify oneself as and pay for a $350 company sponsorship" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4" name="Easily find a link in the menu that links to the registration form" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="5" name="Fill out a user registration form" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="6" name="Find session information" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="7" name="Easily become a sponsor at the $350 level without manual intervention" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="8" name="Ensure user-friendly navigation for attendees to access company-related information" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="9" name="Simplify the process of registering for the camp" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="10" name="Provide clear and detailed session information for attendees" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="11" name="Implement an online self-service sponsorship registration process" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="12" name="Design a clear and intuitive user interface for accessing attendee lists" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="13" name="Streamline the user registration form to be concise and easy to fill out" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="14" name="Display session schedules in a structured and organized manner" description="" type="Task" decompositiontype="And"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="7" destid="1" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="8" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="9" destid="5" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="10" destid="6" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="11" destid="7"/>
+        <decomposition name="Decomposition2" description="" srcid="12" destid="8"/>
+        <decomposition name="Decomposition3" description="" srcid="13" destid="9"/>
+        <decomposition name="Decomposition4" description="" srcid="14" destid="10"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Authenticated User" description=""/>
+        <actor id="2" name="Anonymous User" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="7"/>
+        <actorContIE actor="1" ie="11"/>
+        <actorContIE actor="2" ie="2"/>
+        <actorContIE actor="2" ie="5"/>
+    </actor-IE-link-def>
+</grl-catalog>

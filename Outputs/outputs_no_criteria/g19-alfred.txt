@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="HealthcareSystemRequirements" description="Requirements for the Healthcare System" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="Determine accurate measurement of vital parameters" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="2" name="Provide actionable insights based on vital parameter data" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="3" name="Ensure ease of use for Medical Caregiver" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="4" name="Enhance user engagement with proposed games" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="5" name="Determine the user's blood pressure" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="6" name="Determine the user's body temperature" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="7" name="Determine the user's heart rate" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="8" name="Determine the user's breathing frequency" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="9" name="Have feedback on the activity level of the user" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="10" name="Propose games that require the combination of mental and physical exercises" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="11" name="Connect blood pressure monitor to ALFRED" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="12" name="Connect temperature sensor to ALFRED" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="13" name="Connect heart rate monitor to ALFRED" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="14" name="Connect breathing sensor to ALFRED" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="15" name="Calibrate sensors regularly" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="16" name="Validate sensor readings against known standards" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="17" name="Develop algorithms for data analysis" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="18" name="Generate personalized recommendations based on data trends" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="19" name="Implement visualizations to aid in understanding data" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="20" name="Conduct user testing for ALFRED interface" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="21" name="Gather feedback on user experience" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="22" name="Implement interface improvements based on feedback" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="23" name="Analyze user interaction data with games" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="24" name="Incorporate user feedback for game enhancement" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="25" name="Introduce new game scenarios for variety" description="" type="Task" decompositiontype="And"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="11" destid="5" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="12" destid="6" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="13" destid="7" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="14" destid="8" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="15" destid="1" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="16" destid="1" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution7" description="" srcid="17" destid="2" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution8" description="" srcid="18" destid="2" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution9" description="" srcid="19" destid="2" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution10" description="" srcid="20" destid="3" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution11" description="" srcid="21" destid="3" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution12" description="" srcid="22" destid="3" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution13" description="" srcid="23" destid="4" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution14" description="" srcid="24" destid="4" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution15" description="" srcid="25" destid="4" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="1" destid="11"/>
+        <decomposition name="Decomposition2" description="" srcid="2" destid="17"/>
+        <decomposition name="Decomposition3" description="" srcid="2" destid="18"/>
+        <decomposition name="Decomposition4" description="" srcid="2" destid="19"/>
+        <decomposition name="Decomposition5" description="" srcid="3" destid="20"/>
+        <decomposition name="Decomposition6" description="" srcid="3" destid="21"/>
+        <decomposition name="Decomposition7" description="" srcid="3" destid="22"/>
+        <decomposition name="Decomposition8" description="" srcid="4" destid="23"/>
+        <decomposition name="Decomposition9" description="" srcid="4" destid="24"/>
+        <decomposition name="Decomposition10" description="" srcid="4" destid="25"/>
+    </link-def>
+</grl-catalog>

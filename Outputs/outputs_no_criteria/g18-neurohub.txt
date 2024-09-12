@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="NeurohubRequirements" description="Catalog of requirements for the Neurohub system" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="install Neurohub node onto a virgin Ubuntu operating system" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2" name="test if Neurohub installation is functioning correctly" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="3" name="execute acceptance tests against Neurohub installation and report results" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4" name="install Neurohub dependencies into an Ubuntu 10.04 LTS machine using Ubuntu package management tools" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="5" name="create a log book page for an experiment" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="6" name="attach a file to a log book page" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="7" name="attach a directory containing multiple files to a log book page" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="8" name="Ensure successful installation of Neurohub node" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="9" name="Verify proper functioning of Neurohub installation" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="10" name="Achieve accurate execution and reporting of acceptance tests" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="11" name="Maintain system stability during Neurohub dependencies installation" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="12" name="Ensure seamless attachment of files to log book pages" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="13" name="run script to install Neurohub node" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="14" name="run script to test Neurohub installation" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="15" name="call script to execute acceptance tests" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="16" name="report acceptance test results" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="17" name="run script to install Neurohub dependencies" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="18" name="create log book page" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="19" name="attach file to log book page" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="20" name="attach directory containing multiple files to log book page" description="" type="Task" decompositiontype="And"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="13" destid="8" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="14" destid="9" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="15" destid="10" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="17" destid="11" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="18" destid="12" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="1" destid="13"/>
+        <decomposition name="Decomposition2" description="" srcid="2" destid="14"/>
+        <decomposition name="Decomposition3" description="" srcid="3" destid="15"/>
+        <decomposition name="Decomposition4" description="" srcid="4" destid="17"/>
+        <decomposition name="Decomposition5" description="" srcid="5" destid="18"/>
+        <decomposition name="Decomposition6" description="" srcid="6" destid="19"/>
+        <decomposition name="Decomposition7" description="" srcid="7" destid="20"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="system administrator" description=""/>
+        <actor id="2" name="release engineer" description=""/>
+        <actor id="3" name="researcher" description=""/>
+        <actor id="4" name="systems administrator" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="2" ie="1"/>
+        <actorContIE actor="2" ie="2"/>
+        <actorContIE actor="3" ie="3"/>
+        <actorContIE actor="4" ie="4"/>
+        <actorContIE actor="4" ie="1"/>
+    </actor-IE-link-def>
+</grl-catalog>

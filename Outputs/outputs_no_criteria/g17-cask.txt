@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="SoftwareDevelopment" description="Goal model for software development project" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Share dataset types across multiple applications" description="Allow sharing of dataset types among different applications" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="2" name="Explore dataset instances" description="Enable users to explore dataset instances within an app" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Ensure artifact deployment without affecting other datasets" description="Deploy artifacts without impacting existing datasets" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Ensure new artifacts do not create any dataset types or instances" description="Prevent unintentional creation of dataset types or instances during artifact deployment" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Ensure dataset instances use new code in new app versions" description="Ensure that dataset instances in new app versions utilize updated code" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="6" name="Ensure dataset instances use correct code in older app versions" description="Verify dataset instances use correct code in older app versions" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Seamless integration of shared dataset types" description="Efficient integration of shared dataset types across apps" type="SoftGoal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Maintain backward compatibility for dataset instances" description="Ensure older dataset instances remain compatible with new versions" type="SoftGoal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Enhance data exploration experience for users" description="Improve user experience when exploring dataset instances" type="SoftGoal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Improve artifact deployment process efficiency" description="Enhance efficiency of artifact deployment procedures" type="SoftGoal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Ensure data security during artifact deployment" description="Implement security measures during artifact deployment" type="SoftGoal" decompositiontype="AND"/>
+        <intentional-element id="12" name="Enhance user experience when exploring dataset instances" description="Provide a user-friendly interface for exploring dataset instances" type="SoftGoal" decompositiontype="AND"/>
+        <intentional-element id="13" name="Develop standardized data sharing protocols" description="Establish protocols for sharing dataset types" type="Task" decompositiontype="AND"/>
+        <intentional-element id="14" name="Implement version control for dataset types" description="Introduce version control for managing dataset types" type="Task" decompositiontype="AND"/>
+        <intentional-element id="15" name="Define access control mechanisms for shared dataset types" description="Set up access controls for shared dataset types" type="Task" decompositiontype="AND"/>
+        <intentional-element id="16" name="Implement data exploration feature in the application" description="Add a feature to explore dataset instances" type="Task" decompositiontype="AND"/>
+        <intentional-element id="17" name="Ensure users can view details of dataset instances" description="Enable users to access detailed information about dataset instances" type="Task" decompositiontype="AND"/>
+        <intentional-element id="18" name="Conduct thorough testing of artifact deployment process" description="Perform testing to ensure artifact deployment works as intended" type="Task" decompositiontype="AND"/>
+        <intentional-element id="19" name="Implement isolation mechanisms for dataset types" description="Implement mechanisms to isolate dataset types during deployment" type="Task" decompositiontype="AND"/>
+        <intentional-element id="20" name="Implement checks to prevent unintended dataset creation" description="Incorporate checks to avoid unintended dataset creation" type="Task" decompositiontype="AND"/>
+        <intentional-element id="21" name="Verify no new dataset instances are created during artifact deployment" description="Ensure that new artifact deployment does not create new dataset instances" type="Task" decompositiontype="AND"/>
+        <intentional-element id="22" name="Develop mechanism to update dataset instances with new code" description="Develop a mechanism to update dataset instances with new code" type="Task" decompositiontype="AND"/>
+        <intentional-element id="23" name="Implement version compatibility checks for dataset instances" description="Check compatibility of dataset instances with new code versions" type="Task" decompositiontype="AND"/>
+        <intentional-element id="24" name="Implement backward compatibility mechanism for dataset instances" description="Implement a mechanism to ensure backward compatibility of dataset instances" type="Task" decompositiontype="AND"/>
+        <intentional-element id="25" name="Conduct testing to verify correct code usage in older app versions" description="Perform testing to ensure correct code usage in older app versions" type="Task" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="Help relationship" srcid="13" destid="7" contributiontype="HELP"/>
+        <contribution name="Contribution2" description="Make relationship" srcid="14" destid="7" contributiontype="MAKE"/>
+        <contribution name="Contribution3" description="Help relationship" srcid="14" destid="8" contributiontype="HELP"/>
+        <contribution name="Contribution4" description="Help relationship" srcid="15" destid="7" contributiontype="HELP"/>
+        <contribution name="Contribution5" description="Make relationship" srcid="16" destid="9" contributiontype="MAKE"/>
+        <contribution name="Contribution6" description="Make relationship" srcid="16" destid="12" contributiontype="MAKE"/>
+        <contribution name="Contribution7" description="Help relationship" srcid="17" destid="9" contributiontype="HELP"/>
+        <contribution name="Contribution8" description="Make relationship" srcid="18" destid="10" contributiontype="MAKE"/>
+        <contribution name="Contribution9" description="Make relationship" srcid="19" destid="11" contributiontype="MAKE"/>
+        <contribution name="Contribution10" description="Make relationship" srcid="20" destid="11" contributiontype="MAKE"/>
+        <contribution name="Contribution11" description="Make relationship" srcid="21" destid="11" contributiontype="MAKE"/>
+        <contribution name="Contribution12" description="Help relationship" srcid="22" destid="5" contributiontype="HELP"/>
+        <contribution name="Contribution13" description="Make relationship" srcid="23" destid="5" contributiontype="MAKE"/>
+        <contribution name="Contribution14" description="Make relationship" srcid="24" destid="6" contributiontype="MAKE"/>
+        <contribution name="Contribution15" description="Make relationship" srcid="25" destid="6" contributiontype="MAKE"/>
+        <decomposition name="Decomposition1" description="AND decomposition" srcid="1" destid="7"/>
+        <decomposition name="Decomposition2" description="AND decomposition" srcid="2" destid="9"/>
+        <decomposition name="Decomposition3" description="AND decomposition" srcid="3" destid="10"/>
+        <decomposition name="Decomposition4" description="AND decomposition" srcid="4" destid="10"/>
+        <decomposition name="Decomposition5" description="AND decomposition" srcid="5" destid="22"/>
+        <decomposition name="Decomposition6" description="AND decomposition" srcid="6" destid="24"/>
+        <decomposition name="Decomposition7" description="AND decomposition" srcid="7" destid="13"/>
+        <decomposition name="Decomposition8" description="AND decomposition" srcid="7" destid="14"/>
+        <decomposition name="Decomposition9" description="AND decomposition" srcid="7" destid="15"/>
+        <decomposition name="Decomposition10" description="AND decomposition" srcid="9" destid="16"/>
+        <decomposition name="Decomposition11" description="AND decomposition" srcid="9" destid="17"/>
+        <decomposition name="Decomposition12" description="AND decomposition" srcid="10" destid="18"/>
+        <decomposition name="Decomposition13" description="AND decomposition" srcid="10" destid="19"/>
+        <decomposition name="Decomposition14" description="AND decomposition" srcid="10" destid="20"/>
+        <decomposition name="Decomposition15" description="AND decomposition" srcid="10" destid="21"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="App Developer" description="Developer working on application-related tasks"/>
+        <actor id="2" name="Dataset Developer" description="Developer specializing in dataset management"/>
+        <actor id="3" name="User" description="End user of the application"/>
+        <actor id="4" name="Plugin Developer" description="Developer creating plugins for the application"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="1" ie="5"/>
+        <actorContIE actor="1" ie="6"/>
+        <actorContIE actor="1" ie="7"/>
+        <actorContIE actor="1" ie="8"/>
+        <actorContIE actor="1" ie="9"/>
+        <actorContIE actor="1" ie="10"/>
+        <actorContIE actor="1" ie="11"/>
+        <actorContIE actor="1" ie="12"/>
+        <actorContIE actor="1" ie="13"/>
+        <actorContIE actor="1" ie="14"/>
+        <actorContIE actor="1" ie="15"/>
+        <actorContIE actor="1" ie="16"/>
+        <actorContIE actor="1" ie="17"/>
+        <actorContIE actor="1" ie="18"/>
+        <actorContIE actor="1" ie="19"/>
+        <actorContIE actor="1" ie="20"/>
+        <actorContIE actor="1" ie="21"/>
+        <actorContIE actor="1" ie="22"/>
+        <actorContIE actor="1" ie="23"/>
+        <actorContIE actor="1" ie="24"/>
+        <actorContIE actor="1" ie="25"/>
+    </actor-IE-link-def>
+</grl-catalog>

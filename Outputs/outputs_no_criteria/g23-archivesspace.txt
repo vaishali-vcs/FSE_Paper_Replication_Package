@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="Archivist_System_Requirements" description="System requirements based on user stories" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Import Accessions data in CSV" description="Ability to import Accessions data in CSV format" type="Goal"/>
+        <intentional-element id="2" name="Specify Source for Agent Name Form" description="Specify and manage sources for Agent Name Form" type="Goal"/>
+        <intentional-element id="3" name="Create and Edit Agent Records" description="Functionality to create and modify Agent records" type="Goal"/>
+        <intentional-element id="4" name="Create and Edit Resource Record" description="Capability to create and edit Resource records" type="Goal"/>
+        <intentional-element id="5" name="Associate Subject with Resource Description" description="Link Subject records to Resource descriptions" type="Goal"/>
+        <intentional-element id="6" name="Assign Location Information to Container" description="Ability to assign location details to Containers" type="Goal"/>
+        <intentional-element id="7" name="Improve data import efficiency" description="Enhance efficiency of importing data" type="Softgoal"/>
+        <intentional-element id="8" name="Enhance user experience in specifying Agent sources" description="Improve user interface for specifying Agent sources" type="Softgoal"/>
+        <intentional-element id="9" name="Ensure user-friendly interface for creating and editing Agent records" description="Create a user-friendly interface for managing Agent records" type="Softgoal"/>
+        <intentional-element id="10" name="Enhance system usability in creating and editing Resource records" description="Improve usability of creating and editing Resource records" type="Softgoal"/>
+        <intentional-element id="11" name="Improve efficiency in associating Subject records with Resource descriptions" description="Enhance efficiency of associating Subjects with Resources" type="Softgoal"/>
+        <intentional-element id="12" name="Enhance user experience in assigning Location information to Containers" description="Improve user interface for assigning Location details" type="Softgoal"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="7" destid="1" contributiontype="AND"/>
+        <contribution name="Contribution2" description="" srcid="8" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution3" description="" srcid="9" destid="8" contributiontype="HELP"/>
+        <contribution name="Contribution4" description="" srcid="10" destid="7" contributiontype="HURT"/>
+        <contribution name="Contribution5" description="" srcid="11" destid="9" contributiontype="HELP"/>
+        <contribution name="Contribution6" description="" srcid="12" destid="10" contributiontype="HURT"/>
+        <dependency name="Dependency1" description="" dependerid="1" dependeeid="7"/>
+        <dependency name="Dependency2" description="" dependerid="2" dependeeid="8"/>
+        <dependency name="Dependency3" description="" dependerid="3" dependeeid="9"/>
+        <dependency name="Dependency4" description="" dependerid="4" dependeeid="10"/>
+        <dependency name="Dependency5" description="" dependerid="5" dependeeid="11"/>
+        <dependency name="Dependency6" description="" dependerid="6" dependeeid="12"/>
+    </link-def>
+</grl-catalog>

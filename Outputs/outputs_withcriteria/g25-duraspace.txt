@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStoryModel" description="Goal Model based on User Stories" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="know all the collections" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="2" name="compose collections" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="3" name="limit collection to items sharing the same provenance" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="4" name="limit collection to represent a part of a collection with a singular provenance" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="assembly a collection from other collections and objects" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="6" name="say one collection is related to another collection" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Ensure efficient management of collections" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Maintain data integrity in collections" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Enhance the usability of collection management system" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Improve collaboration among repository managers" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Optimize the organization of collections" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="12" name="Ensure efficient management of collections" type="Task" decompositiontype="AND"/>
+        <intentional-element id="13" name="Maintain data integrity in collections" type="Task" decompositiontype="AND"/>
+        <intentional-element id="14" name="Enhance the usability of collection management system" type="Task" decompositiontype="AND"/>
+        <intentional-element id="15" name="Improve collaboration among repository managers" type="Task" decompositiontype="AND"/>
+        <intentional-element id="16" name="Optimize the organization of collections" type="Task" decompositiontype="AND"/>
+        <intentional-element id="17" name="User-friendly interfaces" type="Resource" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="12" destid="7" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="13" destid="8" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="14" destid="9" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="15" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="16" destid="11" contributiontype="HURT" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="1" destid="7"/>
+        <decomposition name="Decomposition2" description="" srcid="2" destid="11"/>
+        <decomposition name="Decomposition3" description="" srcid="3" destid="11"/>
+        <decomposition name="Decomposition4" description="" srcid="4" destid="11"/>
+        <decomposition name="Decomposition5" description="" srcid="5" destid="11"/>
+        <decomposition name="Decomposition6" description="" srcid="6" destid="11"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="RepositoryManager" description="Stakeholder responsible for managing repositories"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="1" ie="5"/>
+        <actorContIE actor="1" ie="6"/>
+        <actorContIE actor="1" ie="7"/>
+        <actorContIE actor="1" ie="8"/>
+        <actorContIE actor="1" ie="9"/>
+        <actorContIE actor="1" ie="10"/>
+        <actorContIE actor="1" ie="11"/>
+        <actorContIE actor="1" ie="12"/>
+        <actorContIE actor="1" ie="13"/>
+        <actorContIE actor="1" ie="14"/>
+        <actorContIE actor="1" ie="15"/>
+        <actorContIE actor="1" ie="16"/>
+        <actorContIE actor="1" ie="17"/>
+    </actor-IE-link-def>
+</grl-catalog>

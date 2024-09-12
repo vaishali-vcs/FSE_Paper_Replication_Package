@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStoryRequirements" description="Requirements generated from user stories" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="map an item from one collection to another" description="" type="Goal"/>
+        <intentional-element id="2" name="have a summary of all remote replication status at collection level on the dashboard" description="" type="Goal"/>
+        <intentional-element id="3" name="have collection encrypted with a key maintained on the server, a checksum made and stored of the encrypted file, and the encrypted file replicated to the remote storage site" description="" type="Goal"/>
+        <intentional-element id="4" name="lift an embargo for an object in a simple way" description="" type="Goal"/>
+        <intentional-element id="5" name="create deposit forms specific to the collection" description="" type="Goal"/>
+        <intentional-element id="6" name="allow some collections the option of setting an embargo date at deposit" description="" type="Goal"/>
+        <intentional-element id="7" name="Ensure data security during encryption and replication" description="" type="Softgoal"/>
+        <intentional-element id="8" name="Enhance user experience for embargo lifting process" description="" type="Softgoal"/>
+        <intentional-element id="9" name="Improve system efficiency for deposit form creation" description="" type="Softgoal"/>
+        <intentional-element id="10" name="Facilitate flexible embargo date setting for collections" description="" type="Softgoal"/>
+        <intentional-element id="11" name="identify source collection" description="" type="Task"/>
+        <intentional-element id="12" name="select item(s) to be mapped" description="" type="Task"/>
+        <intentional-element id="13" name="verify user permissions" description="" type="Task"/>
+        <intentional-element id="14" name="Define required fields for deposit form" description="" type="Task"/>
+        <intentional-element id="15" name="Design intuitive user interface for embargo lifting" description="" type="Task"/>
+        <intentional-element id="16" name="configure system to enable embargo setting during deposit" description="" type="Task"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="7" destid="3" contributiontype="HELP"/>
+        <contribution name="Contribution2" description="" srcid="8" destid="4" contributiontype="HELP"/>
+        <contribution name="Contribution3" description="" srcid="9" destid="5" contributiontype="HELP"/>
+        <contribution name="Contribution4" description="" srcid="10" destid="6" contributiontype="HELP"/>
+        <decomposition name="Decomposition1" description="" srcid="1" destid="2"/>
+        <decomposition name="Decomposition2" description="" srcid="3" destid="11"/>
+        <decomposition name="Decomposition3" description="" srcid="4" destid="13"/>
+        <dependency name="Dependency1" description="" dependerid="3" dependeeid="12"/>
+        <dependency name="Dependency2" description="" dependerid="5" dependeeid="14"/>
+        <dependency name="Contribution1" description="" dependerid="6" dependeeid="16"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Collection Curator" description=""/>
+        <actor id="2" name="Faculty Member" description=""/>
+        <actor id="3" name="Repository Manager" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="2" ie="4"/>
+        <actorContIE actor="2" ie="5"/>
+        <actorContIE actor="2" ie="6"/>
+    </actor-IE-link-def>
+</grl-catalog>

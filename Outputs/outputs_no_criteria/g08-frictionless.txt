@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStoryRequirements" description="Catalog of intentional elements and relationships based on user stories" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Researcher" description="Stakeholder who wants to get a Data Package into Julia in seconds" type="Actor"/>
+        <intentional-element id="2" name="Publisher" description="Stakeholder who wants to add type information to data" type="Actor"/>
+        <intentional-element id="3" name="Developer" description="Stakeholder who wants to get a Data Package into Node" type="Actor"/>
+        <intentional-element id="4" name="Researcher Publisher" description="Stakeholder who wants to know that data conforms to its Data Package profile" type="Actor"/>
+        <intentional-element id="5" name="Get a Data Package into Node" description="Stakeholder wants to import a Data Package into Node environment" type="Goal" decompositiontype="And"/>
+        <intentional-element id="6" name="Get a Data Package into Julia in seconds" description="Stakeholder wants to develop a mechanism to import a Data Package into Julia in seconds" type="Goal" decompositiontype="And"/>
+        <intentional-element id="7" name="Add type information to data" description="Stakeholder wants to assign type information to the data" type="Goal" decompositiontype="And"/>
+        <intentional-element id="8" name="Provide a visualization of data in the Data Package" description="Stakeholder wants to offer a visualization of data in the Data Package" type="Goal" decompositiontype="And"/>
+        <intentional-element id="9" name="Save new visualizations" description="Stakeholder wants to save new visualizations for sharing" type="Goal" decompositiontype="And"/>
+        <intentional-element id="10" name="Know that data conforms to its Data Package profile" description="Stakeholder wants to verify data conformity to its Data Package profile" type="Goal" decompositiontype="And"/>
+        <intentional-element id="11" name="Ensure data availability for analysis and visualizations" description="Softgoal to guarantee data availability for analysis and visualizations" type="SoftGoal" decompositiontype="And"/>
+        <intentional-element id="12" name="Enhance data usability with type information" description="Softgoal to improve data usability with type information" type="SoftGoal" decompositiontype="And"/>
+        <intentional-element id="13" name="Improve data visualization presentation" description="Softgoal to enhance data visualization presentation" type="SoftGoal" decompositiontype="And"/>
+        <intentional-element id="14" name="Establish trust in data validity and usefulness" description="Softgoal to establish trust in data validity and usefulness" type="SoftGoal" decompositiontype="And"/>
+        <intentional-element id="15" name="Import Data Package into Node environment" description="Task to import Data Package into Node environment" type="Task" decompositiontype="And"/>
+        <intentional-element id="16" name="Develop efficient data import mechanism in Julia" description="Task to develop an efficient data import mechanism in Julia" type="Task" decompositiontype="And"/>
+        <intentional-element id="17" name="Identify data types in the dataset" description="Task to identify data types in the dataset" type="Task" decompositiontype="And"/>
+        <intentional-element id="18" name="Select suitable visualization tool" description="Task to select a suitable visualization tool" type="Task" decompositiontype="And"/>
+        <intentional-element id="19" name="Develop functionality to save visualizations" description="Task to develop functionality to save visualizations" type="Task" decompositiontype="And"/>
+        <intentional-element id="20" name="Define Data Package profile requirements" description="Task to define Data Package profile requirements" type="Task" decompositiontype="And"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="Contribution link to establish trust in data validity and usefulness" srcid="13" destid="14" contributiontype="HELP"/>
+        <contribution name="Contribution2" description="Contribution link to enhance data usability with type information" srcid="12" destid="13" contributiontype="HELP"/>
+        <contribution name="Contribution3" description="Contribution link to improve data visualization presentation" srcid="13" destid="14" contributiontype="HELP"/>
+        <decomposition name="Decomposition1" description="Decomposition link to import Data Package into Node environment task" srcid="5" destid="15"/>
+        <decomposition name="Decomposition2" description="Decomposition link to develop efficient data import mechanism in Julia task" srcid="6" destid="16"/>
+        <decomposition name="Decomposition3" description="Decomposition link to identify data types in the dataset task" srcid="7" destid="17"/>
+        <decomposition name="Decomposition4" description="Decomposition link to select suitable visualization tool task" srcid="8" destid="18"/>
+        <decomposition name="Decomposition5" description="Decomposition link to develop functionality to save visualizations task" srcid="9" destid="19"/>
+        <decomposition name="Decomposition6" description="Decomposition link to define Data Package profile requirements task" srcid="10" destid="20"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Researcher"/>
+        <actor id="2" name="Publisher"/>
+        <actor id="3" name="Developer"/>
+        <actor id="4" name="Researcher Publisher"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="2" ie="2"/>
+        <actorContIE actor="3" ie="3"/>
+        <actorContIE actor="4" ie="4"/>
+    </actor-IE-link-def>
+</grl-catalog>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStoryCatalog" description="Catalog of user stories and intentional elements" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="Search for Information" description="" type="Goal"/>
+        <intentional-element id="2" name="Obtain publicly available information concerning properties, County services, processes, and other general information" description="" type="Softgoal"/>
+        <intentional-element id="3" name="Enter search query" description="" type="Task"/>
+        <intentional-element id="4" name="Browse search results" description="" type="Task"/>
+        <intentional-element id="5" name="View detailed information" description="" type="Task"/>
+        <intentional-element id="6" name="Request PreApplication Assistance" description="" type="Goal"/>
+        <intentional-element id="7" name="Receive a response to a request for a meeting or information that is a result of the preapplication assistance" description="" type="Softgoal"/>
+        <intentional-element id="8" name="Submit assistance request" description="" type="Task"/>
+        <intentional-element id="9" name="Receive response" description="" type="Task"/>
+        <intentional-element id="10" name="Create a Customer Portal User Account" description="" type="Goal"/>
+        <intentional-element id="11" name="Log on to the Customer Portal and perform transactions that first require user authentication" description="" type="Softgoal"/>
+        <intentional-element id="12" name="Fill out account creation form" description="" type="Task"/>
+        <intentional-element id="13" name="Verify email address" description="" type="Task"/>
+        <intentional-element id="14" name="Set up login credentials" description="" type="Task"/>
+        <intentional-element id="15" name="Perform a Completeness Review" description="" type="Goal"/>
+        <intentional-element id="16" name="Validate when an application is complete and eligible for further technical review" description="" type="Softgoal"/>
+        <intentional-element id="17" name="Gather application materials" description="" type="Task"/>
+        <intentional-element id="18" name="Verify completeness" description="" type="Task"/>
+        <intentional-element id="19" name="Record an Internal Note" description="" type="Goal"/>
+        <intentional-element id="20" name="Share information with other staff collaborating on the record" description="" type="Softgoal"/>
+        <intentional-element id="21" name="Write note content" description="" type="Task"/>
+        <intentional-element id="22" name="Save note in system" description="" type="Task"/>
+        <intentional-element id="23" name="Assign an Application for Detailed Review" description="" type="Goal"/>
+        <intentional-element id="24" name="Review the application for compliance and subsequently approve or deny it" description="" type="Softgoal"/>
+        <intentional-element id="25" name="Retrieve the assigned application for review" description="" type="Task"/>
+        <intentional-element id="26" name="Evaluate compliance with regulations and guidelines" description="" type="Task"/>
+        <intentional-element id="27" name="Make a decision to approve or deny the application" description="" type="Task"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="3" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="8" destid="7" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="12" destid="11" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="17" destid="16" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="21" destid="20" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="25" destid="24" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="15" destid="17"/>
+        <decomposition name="Decomposition2" description="" srcid="15" destid="18"/>
+        <decomposition name="Decomposition3" description="" srcid="19" destid="21"/>
+        <decomposition name="Decomposition4" description="" srcid="19" destid="22"/>
+        <decomposition name="Decomposition5" description="" srcid="23" destid="25"/>
+        <decomposition name="Decomposition6" description="" srcid="23" destid="26"/>
+        <decomposition name="Decomposition7" description="" srcid="23" destid="27"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Public User" description=""/>
+        <actor id="2" name="Applicant" description=""/>
+        <actor id="3" name="Customer" description=""/>
+        <actor id="4" name="Staff member" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="2" ie="6"/>
+        <actorContIE actor="2" ie="8"/>
+        <actorContIE actor="3" ie="10"/>
+        <actorContIE actor="3" ie="12"/>
+        <actorContIE actor="4" ie="15"/>
+        <actorContIE actor="4" ie="17"/>
+        <actorContIE actor="4" ie="19"/>
+        <actorContIE actor="4" ie="23"/>
+    </actor-IE-link-def>
+</grl-catalog>

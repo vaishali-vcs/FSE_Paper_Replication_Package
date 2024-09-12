@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="SoftwareDevelopment" description="Initial goal model based on user stories" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="IT staff member" description="Stakeholder responsible for IT operations" type="Actor"/>
+        <intentional-element id="2" name="administrator" description="Stakeholder responsible for project management" type="Actor"/>
+        <intentional-element id="3" name="legal office" description="Stakeholder responsible for legal aspects" type="Actor"/>
+        <intentional-element id="4" name="data manager" description="Stakeholder responsible for data management" type="Actor"/>
+        <intentional-element id="5" name="archive manager" description="Stakeholder responsible for archive management" type="Actor"/>
+        <intentional-element id="6" name="metadata manager" description="Stakeholder responsible for metadata management" type="Actor"/>
+        <intentional-element id="7" name="know about data sensitivity" description="Softgoal to ensure data sensitivity" type="Softgoal"/>
+        <intentional-element id="8" name="have an estimate of the produced data volume" description="Softgoal to optimize data storage" type="Softgoal"/>
+        <intentional-element id="9" name="know who funded the project and their requirements" description="Softgoal to comply with legal regulations" type="Softgoal"/>
+        <intentional-element id="10" name="know the legal status of data" description="Softgoal to enhance data security" type="Softgoal"/>
+        <intentional-element id="11" name="know in advance the conservation period of data" description="Softgoal to maintain data integrity" type="Softgoal"/>
+        <intentional-element id="12" name="document all rights necessary for managing the data" description="Softgoal to improve data accessibility" type="Softgoal"/>
+        <intentional-element id="13" name="Ensure data sensitivity" description="Task to identify sensitive data categories" type="Task"/>
+        <intentional-element id="14" name="Optimize data storage" description="Task to perform data storage assessment" type="Task"/>
+        <intentional-element id="15" name="Comply with legal regulations" description="Task to review legal compliance" type="Task"/>
+        <intentional-element id="16" name="Enhance data security" description="Task to implement security measures" type="Task"/>
+        <intentional-element id="17" name="Maintain data integrity" description="Task to conduct data validation" type="Task"/>
+        <intentional-element id="18" name="Improve data accessibility" description="Task to enhance data access" type="Task"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="MAKE contribution for ensuring data sensitivity" srcid="13" destid="7" contributiontype="MAKE"/>
+        <contribution name="Contribution2" description="HELP contribution for optimizing data storage" srcid="14" destid="8" contributiontype="HELP"/>
+        <contribution name="Contribution3" description="MAKE contribution for complying with legal regulations" srcid="15" destid="9" contributiontype="MAKE"/>
+        <contribution name="Contribution4" description="HELP contribution for enhancing data security" srcid="16" destid="10" contributiontype="HELP"/>
+        <contribution name="Contribution5" description="MAKE contribution for maintaining data integrity" srcid="17" destid="11" contributiontype="MAKE"/>
+        <contribution name="Contribution6" description="HELP contribution for improving data accessibility" srcid="18" destid="12" contributiontype="HELP"/>
+        <dependency name="Dependency1" description="know about data sensitivity depends on IT staff member for data sensitivity analysis" dependerid="7" dependeeid="1" dependum="data sensitivity analysis"/>
+        <dependency name="Dependency2" description="Optimize data storage depends on data manager for data storage assessment" dependerid="8" dependeeid="4" dependum="data storage assessment"/>
+        <dependency name="Dependency3" description="Comply with legal regulations depends on administrator for legal compliance review" dependerid="9" dependeeid="2" dependum="legal compliance review"/>
+        <dependency name="Dependency4" description="Enhance data security depends on metadata manager for security audit implementation" dependerid="10" dependeeid="6" dependum="security audit implementation"/>
+        <dependency name="Dependency5" description="Maintain data integrity depends on archive manager for data validation procedures" dependerid="11" dependeeid="5" dependum="data validation procedures"/>
+        <dependency name="Dependency6" description="Improve data accessibility depends on data manager for user-friendly interface implementation" dependerid="12" dependeeid="4" dependum="user-friendly interface implementation"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="IT staff member" description="Stakeholder responsible for IT operations"/>
+        <actor id="2" name="administrator" description="Stakeholder responsible for project management"/>
+        <actor id="3" name="legal office" description="Stakeholder responsible for legal aspects"/>
+        <actor id="4" name="data manager" description="Stakeholder responsible for data management"/>
+        <actor id="5" name="archive manager" description="Stakeholder responsible for archive management"/>
+        <actor id="6" name="metadata manager" description="Stakeholder responsible for metadata management"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="13"/>
+        <actorContIE actor="1" ie="7"/>
+        <actorContIE actor="2" ie="15"/>
+        <actorContIE actor="2" ie="9"/>
+        <actorContIE actor="3" ie="10"/>
+        <actorContIE actor="4" ie="14"/>
+        <actorContIE actor="4" ie="8"/>
+        <actorContIE actor="4" ie="18"/>
+        <actorContIE actor="5" ie="17"/>
+        <actorContIE actor="5" ie="11"/>
+        <actorContIE actor="6" ie="16"/>
+        <actorContIE actor="6" ie="12"/>
+    </actor-IE-link-def>
+</grl-catalog>

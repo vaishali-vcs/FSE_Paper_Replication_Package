@@ -1,0 +1,43 @@
+<grl-catalog catalog-name="UserStoryCatalog" description="Catalog containing User Story GRL elements" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="Install Neurohub node" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="2" name="Test Neurohub installation" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="3" name="Execute acceptance tests for Neurohub" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="4" name="Install Neurohub dependencies" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="5" name="Create log book page and attach file" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="6" name="Smooth Neurohub node installation" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Verify Neurohub installation" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Successful acceptance tests execution" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Maintain compatibility with Ubuntu 10.04 LTS" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Easy file attachment to log book pages" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Neurohub installation is functioning correctly" description="" type="Softgoal" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="1" destid="6" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="2" destid="7" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="3" destid="8" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="4" destid="9" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="5" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="2" destid="11" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="System Administrator" description="Responsible for system administration tasks"/>
+        <actor id="2" name="Release Engineer" description="Responsible for release-related tasks"/>
+        <actor id="3" name="Researcher" description="Responsible for research tasks"/>
+        <actor id="4" name="Installer" description="Responsible for installing software components"/>
+        <actor id="5" name="User" description="End-user of the system"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="2" ie="2"/>
+        <actorContIE actor="3" ie="3"/>
+        <actorContIE actor="4" ie="4"/>
+        <actorContIE actor="5" ie="5"/>
+        <actorContIE actor="1" ie="6"/>
+        <actorContIE actor="1" ie="7"/>
+        <actorContIE actor="1" ie="8"/>
+        <actorContIE actor="1" ie="9"/>
+        <actorContIE actor="1" ie="10"/>
+        <actorContIE actor="1" ie="11"/>
+    </actor-IE-link-def>
+</grl-catalog>

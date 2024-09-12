@@ -1,0 +1,68 @@
+<grl-catalog catalog-name="SoftwareRequirements" description="Initial goal model based on user stories" author="Engineer">
+    <element-def>
+        <intentional-element id="1" name="Ensure data discoverability" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="2" name="Enhance data security measures" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Foster data sharing and collaboration" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Facilitate compliance with data management policies" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Ensure compliance with laws and collaboration agreements" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="6" name="Improve data discoverability" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Reduce duplication of data storage across repositories" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Improve data quality and accuracy" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Promote data preservation and longevity" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Encourage research reproducibility" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Enhance user satisfaction and usability" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="12" name="Provide data access controls" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="13" name="Implement data validation checks" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="14" name="Develop metadata tagging system" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="15" name="Establish data linkage protocols with external repositories" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="16" name="Define data retention periods" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="17" name="Implement encryption protocols for data at rest" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="18" name="Conduct audits of archival procedures" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="19" name="Create data sharing policies and guidelines" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="20" name="Develop data management policy framework" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="21" name="Implement data governance structure and oversight mechanisms" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="22" name="Link to data stored in external repositories" description="" type="Resource" decompositiontype="AND"/>
+        <intentional-element id="23" name="Metadata schema for different disciplines" description="" type="Resource" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="13" destid="6" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="17" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="19" destid="3" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="16" destid="4" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="6" destid="2" contributiontype="HELP" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="19" destid="4" contributiontype="HURT" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="12" destid="6"/>
+        <decomposition name="Decomposition2" description="" srcid="13" destid="6"/>
+        <decomposition name="Decomposition3" description="" srcid="14" destid="6"/>
+        <decomposition name="Decomposition4" description="" srcid="15" destid="3"/>
+        <decomposition name="Decomposition5" description="" srcid="16" destid="4"/>
+        <decomposition name="Decomposition6" description="" srcid="17" destid="2"/>
+        <decomposition name="Decomposition7" description="" srcid="18" destid="4"/>
+        <decomposition name="Decomposition8" description="" srcid="19" destid="4"/>
+        <decomposition name="Decomposition9" description="" srcid="20" destid="4"/>
+        <decomposition name="Decomposition10" description="" srcid="21" destid="4"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Depositor" description=""/>
+        <actor id="2" name="Fundingbody" description=""/>
+        <actor id="3" name="Researchers" description=""/>
+        <actor id="4" name="External repository" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="12"/>
+        <actorContIE actor="1" ie="13"/>
+        <actorContIE actor="1" ie="14"/>
+        <actorContIE actor="1" ie="15"/>
+        <actorContIE actor="1" ie="16"/>
+        <actorContIE actor="2" ie="17"/>
+        <actorContIE actor="2" ie="18"/>
+        <actorContIE actor="2" ie="19"/>
+        <actorContIE actor="2" ie="20"/>
+        <actorContIE actor="2" ie="21"/>
+        <actorContIE actor="3" ie="6"/>
+        <actorContIE actor="3" ie="10"/>
+        <actorContIE actor="3" ie="11"/>
+        <actorContIE actor="4" ie="22"/>
+        <actorContIE actor="4" ie="23"/>
+    </actor-IE-link-def>
+</grl-catalog>

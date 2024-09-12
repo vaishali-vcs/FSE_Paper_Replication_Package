@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="Camp Management System" description="Goal model for a Camp Management System" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="Maintain accurate camper records" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="2" name="Improve organizational efficiency" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="3" name="Ensure easy access to necessary documentation" description="" type="Softgoal" decompositiontype="Or"/>
+        <intentional-element id="4" name="Promote legal compliance" description="" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="5" name="Enhance camper experience through well-scheduled activities" description="" type="Softgoal" decompositiontype="Or"/>
+        <intentional-element id="6" name="Update camper information" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="7" name="Track camper attendance" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="8" name="Conduct record audits" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="9" name="Streamline camper management processes" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="10" name="Automate record organization" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="11" name="Develop user-friendly interfaces" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="12" name="Digital storage system" description="" type="Resource" decompositiontype="Or"/>
+        <intentional-element id="13" name="Secure login portal" description="" type="Resource" decompositiontype="Or"/>
+        <intentional-element id="14" name="Notification system" description="" type="Resource" decompositiontype="Or"/>
+        <intentional-element id="15" name="Data privacy protocols" description="" type="Subgoal" decompositiontype="And"/>
+        <intentional-element id="16" name="Consent form verification procedures" description="" type="Subgoal" decompositiontype="And"/>
+        <intentional-element id="17" name="Compliance monitoring measures" description="" type="Subgoal" decompositiontype="And"/>
+        <intentional-element id="18" name="Diverse activity schedule" description="" type="Subgoal" decompositiontype="Or"/>
+        <intentional-element id="19" name="Camper feedback system" description="" type="Subgoal" decompositiontype="Or"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="6" destid="1" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="7" destid="1" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="8" destid="1" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="9" destid="2" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="10" destid="2" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="11" destid="2" contributiontype="Make" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution7" description="" srcid="12" destid="3" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution8" description="" srcid="13" destid="3" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution9" description="" srcid="14" destid="3" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution10" description="" srcid="15" destid="4" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution11" description="" srcid="16" destid="4" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution12" description="" srcid="17" destid="4" contributiontype="Help" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution13" description="" srcid="18" destid="5" contributiontype="Or" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution14" description="" srcid="19" destid="5" contributiontype="Or" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="1" destid="6"/>
+        <decomposition name="Decomposition2" description="" srcid="1" destid="7"/>
+        <decomposition name="Decomposition3" description="" srcid="1" destid="8"/>
+        <decomposition name="Decomposition4" description="" srcid="2" destid="9"/>
+        <decomposition name="Decomposition5" description="" srcid="2" destid="10"/>
+        <decomposition name="Decomposition6" description="" srcid="2" destid="11"/>
+        <decomposition name="Decomposition7" description="" srcid="3" destid="12"/>
+        <decomposition name="Decomposition8" description="" srcid="3" destid="13"/>
+        <decomposition name="Decomposition9" description="" srcid="3" destid="14"/>
+        <decomposition name="Decomposition10" description="" srcid="4" destid="15"/>
+        <decomposition name="Decomposition11" description="" srcid="4" destid="16"/>
+        <decomposition name="Decomposition12" description="" srcid="4" destid="17"/>
+        <decomposition name="Decomposition13" description="" srcid="5" destid="18"/>
+        <decomposition name="Decomposition14" description="" srcid="5" destid="19"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Camp Administrator" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="1" ie="2"/>
+        <actorContIE actor="1" ie="3"/>
+        <actorContIE actor="1" ie="4"/>
+        <actorContIE actor="1" ie="5"/>
+        <actorContIE actor="1" ie="6"/>
+        <actorContIE actor="1" ie="7"/>
+        <actorContIE actor="1" ie="8"/>
+        <actorContIE actor="1" ie="9"/>
+        <actorContIE actor="1" ie="10"/>
+        <actorContIE actor="1" ie="11"/>
+        <actorContIE actor="1" ie="12"/>
+        <actorContIE actor="1" ie="13"/>
+        <actorContIE actor="1" ie="14"/>
+        <actorContIE actor="1" ie="15"/>
+        <actorContIE actor="1" ie="16"/>
+        <actorContIE actor="1" ie="17"/>
+        <actorContIE actor="1" ie="18"/>
+        <actorContIE actor="1" ie="19"/>
+    </actor-IE-link-def>
+</grl-catalog>

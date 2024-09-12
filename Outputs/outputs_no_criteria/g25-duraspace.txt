@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grl-catalog catalog-name="RepositoryManagement" description="Goal model for repository management system" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="repository manager" description="" type="Actor"/>
+        <intentional-element id="2" name="know all the collections" description="" type="Goal"/>
+        <intentional-element id="3" name="compose collections" description="" type="Goal"/>
+        <intentional-element id="4" name="limit the collection to items sharing the same provenance" description="" type="Goal"/>
+        <intentional-element id="5" name="limit the collection to represent a part of a collection with singular provenance" description="" type="Goal"/>
+        <intentional-element id="6" name="assembly a collection from other collections and objects" description="" type="Goal"/>
+        <intentional-element id="7" name="say one collection is related to another collection" description="" type="Goal"/>
+        <intentional-element id="8" name="Ensure ease of navigation and user-friendly interface for repository managers" description="" type="Softgoal"/>
+        <intentional-element id="9" name="Enhance collaboration and communication among repository managers and curators" description="" type="Softgoal"/>
+        <intentional-element id="10" name="Maintain data integrity and consistency within collections" description="" type="Softgoal"/>
+        <intentional-element id="11" name="Improve scalability to handle a growing number of collections and items" description="" type="Softgoal"/>
+        <intentional-element id="12" name="Ensure security and access control mechanisms for sensitive collections" description="" type="Softgoal"/>
+        <intentional-element id="13" name="Enhance the overall efficiency and effectiveness of collection management operations" description="" type="Softgoal"/>
+        <intentional-element id="14" name="Retrieve information on all collections" description="" type="Task"/>
+        <intentional-element id="15" name="Display list of collections" description="" type="Task"/>
+        <intentional-element id="16" name="Create a new collection" description="" type="Task"/>
+        <intentional-element id="17" name="Add items to a collection" description="" type="Task"/>
+        <intentional-element id="18" name="Identify provenance of items in a collection" description="" type="Task"/>
+        <intentional-element id="19" name="Filter collection based on provenance" description="" type="Task"/>
+        <intentional-element id="20" name="Identify singular provenance of a subset of items in a collection" description="" type="Task"/>
+        <intentional-element id="21" name="Restrict collection to items with singular provenance" description="" type="Task"/>
+        <intentional-element id="22" name="Select collections and objects to include in the new collection" description="" type="Task"/>
+        <intentional-element id="23" name="Merge selected collections and objects to form a new collection" description="" type="Task"/>
+        <intentional-element id="24" name="Establish a relationship between two collections" description="" type="Task"/>
+        <intentional-element id="25" name="Define the nature of the relationship between the two collections" description="" type="Task"/>
+        <intentional-element id="26" name="Link collections" description="" type="Task"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="14" destid="2" contributiontype="AND"/>
+        <contribution name="Contribution2" description="" srcid="15" destid="2" contributiontype="AND"/>
+        <contribution name="Contribution3" description="" srcid="16" destid="3" contributiontype="AND"/>
+        <contribution name="Contribution4" description="" srcid="17" destid="3" contributiontype="AND"/>
+        <contribution name="Contribution5" description="" srcid="18" destid="4" contributiontype="AND"/>
+        <contribution name="Contribution6" description="" srcid="19" destid="4" contributiontype="AND"/>
+        <contribution name="Contribution7" description="" srcid="20" destid="5" contributiontype="AND"/>
+        <contribution name="Contribution8" description="" srcid="21" destid="5" contributiontype="AND"/>
+        <contribution name="Contribution9" description="" srcid="22" destid="6" contributiontype="AND"/>
+        <contribution name="Contribution10" description="" srcid="23" destid="6" contributiontype="AND"/>
+        <contribution name="Contribution11" description="" srcid="24" destid="7" contributiontype="AND"/>
+        <contribution name="Contribution12" description="" srcid="25" destid="7" contributiontype="AND"/>
+        <contribution name="Contribution13" description="" srcid="26" destid="7" contributiontype="AND"/>
+        <contribution name="Contribution14" description="" srcid="8" destid="2" contributiontype="HELP"/>
+        <contribution name="Contribution15" description="" srcid="9" destid="3" contributiontype="HELP"/>
+        <contribution name="Contribution16" description="" srcid="10" destid="10" contributiontype="HELP"/>
+        <contribution name="Contribution17" description="" srcid="11" destid="11" contributiontype="HELP"/>
+        <contribution name="Contribution18" description="" srcid="12" destid="12" contributiontype="HELP"/>
+        <contribution name="Contribution19" description="" srcid="13" destid="13" contributiontype="HELP"/>
+        <decomposition name="Decomposition27" description="" srcid="3" destid="16" decompositiontype="AND"/>
+        <decomposition name="Decomposition28" description="" srcid="3" destid="17" decompositiontype="AND"/>
+        <decomposition name="Decomposition29" description="" srcid="4" destid="18" decompositiontype="AND"/>
+        <decomposition name="Decomposition30" description="" srcid="4" destid="19" decompositiontype="AND"/>
+        <decomposition name="Decomposition31" description="" srcid="5" destid="20" decompositiontype="AND"/>
+        <decomposition name="Decomposition32" description="" srcid="5" destid="21" decompositiontype="AND"/>
+        <decomposition name="Decomposition33" description="" srcid="6" destid="22" decompositiontype="AND"/>
+        <decomposition name="Decomposition34" description="" srcid="6" destid="23" decompositiontype="AND"/>
+        <decomposition name="Decomposition35" description="" srcid="7" destid="24" decompositiontype="AND"/>
+        <decomposition name="Decomposition36" description="" srcid="7" destid="25" decompositiontype="AND"/>
+        <decomposition name="Decomposition37" description="" srcid="7" destid="26" decompositiontype="AND"/>
+    </link-def>
+</grl-catalog>

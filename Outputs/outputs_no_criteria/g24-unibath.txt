@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="User-Stories-Requirements" description="Catalog of user stories requirements" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="Ensure data integrity for long-term usability" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="2" name="Enhance data discoverability for researchers in specific disciplines" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Streamline data registration process with external repositories" description="" type="Goal" decompositiontype="OR"/>
+        <intentional-element id="4" name="Ensure compliance with data disposal regulations" description="" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Promote effective funding strategy analysis" description="" type="Goal" decompositiontype="OR"/>
+        <intentional-element id="6" name="Foster collaboration and knowledge sharing among researchers" description="" type="Goal" decompositiontype="OR"/>
+        <intentional-element id="7" name="Implement data validation algorithms" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="8" name="Conduct regular data integrity checks" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="9" name="Backup data on secure servers" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="10" name="Develop a standardized metadata schema" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="11" name="Enhance search functionality for subject-specific data" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="12" name="Implement keyword tagging for data categorization" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="13" name="Establish data transfer protocols with external repositories" description="" type="Task" decompositiontype="OR"/>
+        <intentional-element id="14" name="Automate data registration procedures" description="" type="Task" decompositiontype="OR"/>
+        <intentional-element id="15" name="Define data retention policies" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="16" name="Implement secure data deletion processes" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="17" name="Conduct regular audits for data disposal compliance" description="" type="Task" decompositiontype="AND"/>
+        <intentional-element id="18" name="Develop data analytics tools for funding impact assessment" description="" type="Task" decompositiontype="OR"/>
+        <intentional-element id="19" name="Collect and analyze funding strategy data" description="" type="Task" decompositiontype="OR"/>
+        <intentional-element id="20" name="Establish collaborative platforms for researchers" description="" type="Task" decompositiontype="OR"/>
+        <intentional-element id="21" name="Organize interdisciplinary events for knowledge exchange" description="" type="Task" decompositiontype="OR"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="7" destid="1" contributiontype="Unknown" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="8" destid="1" contributiontype="Unknown" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="9" destid="1" contributiontype="Unknown" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="10" destid="2" contributiontype="Unknown" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="11" destid="2" contributiontype="Unknown" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="12" destid="2" contributiontype="Unknown" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="3" destid="13"/>
+        <decomposition name="Decomposition2" description="" srcid="3" destid="14"/>
+        <decomposition name="Decomposition3" description="" srcid="4" destid="15"/>
+        <decomposition name="Decomposition4" description="" srcid="4" destid="16"/>
+        <decomposition name="Decomposition5" description="" srcid="4" destid="17"/>
+        <decomposition name="Decomposition6" description="" srcid="5" destid="18"/>
+        <decomposition name="Decomposition7" description="" srcid="5" destid="19"/>
+        <decomposition name="Decomposition8" description="" srcid="6" destid="20"/>
+        <decomposition name="Decomposition9" description="" srcid="6" destid="21"/>
+    </link-def>
+</grl-catalog>

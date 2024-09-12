@@ -1,0 +1,76 @@
+<grl-catalog catalog-name="SoftwareRequirements" description="Catalog of Software Requirements" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Ensure Data Confidentiality" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="2" name="Maintain Data Integrity" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Uphold Data Availability" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Ensure Scalability" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Optimize Resource Utilization" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="6" name="Enhance Capacity Planning" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Ensure Financial Transparency" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="8" name="Secure Funding Continuity" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="9" name="Comply with Funding Regulations" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="10" name="Ensure Legal Compliance" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="11" name="Safeguard Data Privacy" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="12" name="Mitigate Legal Risks" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="13" name="Ensure Data Retention Compliance" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="14" name="Enhance Data Lifecycle Management" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="15" name="Optimize Data Archiving Processes" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="16" name="Ensure Data Ownership Clarity" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="17" name="Enhance Data Governance" description="" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="18" name="Facilitate Data Access Control" description="" type="Softgoal" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="1" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="1" destid="11" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution3" description="" srcid="2" destid="1" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="2" destid="13" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="3" destid="2" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="4" destid="5" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution7" description="" srcid="5" destid="4" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution8" description="" srcid="7" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution9" description="" srcid="8" destid="7" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution10" description="" srcid="8" destid="9" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution11" description="" srcid="8" destid="14" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution12" description="" srcid="9" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution13" description="" srcid="10" destid="12" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution14" description="" srcid="11" destid="10" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution15" description="" srcid="11" destid="12" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution16" description="" srcid="13" destid="14" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution17" description="" srcid="14" destid="15" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution18" description="" srcid="16" destid="18" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution19" description="" srcid="17" destid="18" contributiontype="MAKE" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="1" destid="1"/>
+        <decomposition name="Decomposition2" description="" srcid="2" destid="2"/>
+        <decomposition name="Decomposition3" description="" srcid="3" destid="3"/>
+        <decomposition name="Decomposition4" description="" srcid="4" destid="4"/>
+        <decomposition name="Decomposition5" description="" srcid="5" destid="5"/>
+        <decomposition name="Decomposition6" description="" srcid="6" destid="6"/>
+        <decomposition name="Decomposition7" description="" srcid="7" destid="7"/>
+        <decomposition name="Decomposition8" description="" srcid="8" destid="8"/>
+        <decomposition name="Decomposition9" description="" srcid="9" destid="9"/>
+        <decomposition name="Decomposition10" description="" srcid="10" destid="10"/>
+        <decomposition name="Decomposition11" description="" srcid="11" destid="11"/>
+        <decomposition name="Decomposition12" description="" srcid="12" destid="12"/>
+        <decomposition name="Decomposition13" description="" srcid="13" destid="13"/>
+        <decomposition name="Decomposition14" description="" srcid="14" destid="14"/>
+        <decomposition name="Decomposition15" description="" srcid="15" destid="15"/>
+        <decomposition name="Decomposition16" description="" srcid="16" destid="16"/>
+        <decomposition name="Decomposition17" description="" srcid="17" destid="17"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Data Analyst" description="Analyzes data to ensure confidentiality"/>
+        <actor id="2" name="Data Manager" description="Manages data integrity and availability"/>
+        <actor id="3" name="IT Security Specialist" description="Ensures data security and compliance"/>
+        <actor id="4" name="Financial Officer" description="Ensures financial transparency and funding continuity"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="1"/>
+        <actorContIE actor="2" ie="2"/>
+        <actorContIE actor="2" ie="3"/>
+        <actorContIE actor="3" ie="4"/>
+        <actorContIE actor="3" ie="5"/>
+        <actorContIE actor="4" ie="7"/>
+        <actorContIE actor="4" ie="8"/>
+        <actorContIE actor="4" ie="9"/>
+    </actor-IE-link-def>
+</grl-catalog>

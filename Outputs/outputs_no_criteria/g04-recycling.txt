@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grl-catalog catalog-name="UserStoriesCatalog" description="Catalog of User Stories and Intentional Elements" author="Requirements Engineer">
+    <!-- Actors -->
+    <actor-def>
+        <actor id="1" name="User" description="End user of the system"/>
+        <actor id="2" name="Admin" description="Administrator of the system"/>
+        <actor id="3" name="Superuser" description="High-level user with advanced privileges"/>
+        <actor id="4" name="Recycling Facility Representative" description="Representative of a recycling facility"/>
+        <actor id="5" name="Recycling Facility" description="Physical location for recycling"/>
+    </actor-def>
+
+    <!-- Goals -->
+    <element-def>
+        <intentional-element id="1" name="Onboard operations conducted" description="Ensure successful onboarding processes" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2" name="Onboard recycling centers" description="Successfully onboard recycling centers" type="Goal" decompositiontype="And"/>
+        <intentional-element id="3" name="Add operations conducted" description="Efficiently add new information" type="Goal" decompositiontype="And"/>
+        <!-- Additional goals can be included here based on requirements -->
+    </element-def>
+
+    <!-- Soft Goals -->
+    <element-def>
+        <intentional-element id="6" name="Improve user satisfaction with the contact process" description="Enhance user experience with contact functionality" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="7" name="Enhance user engagement through feedback mechanisms" description="Increase user interaction with feedback features" type="Softgoal" decompositiontype="And"/>
+        <!-- Additional soft goals can be included here based on requirements -->
+    </element-def>
+
+    <!-- Tasks -->
+    <element-def>
+        <intentional-element id="10" name="Implement a contact form" description="Develop a form for user-admin communication" type="Task" decompositiontype="And"/>
+        <intentional-element id="11" name="Develop an admin messaging system" description="Create a system for admin communication" type="Task" decompositiontype="And"/>
+        <!-- Additional tasks can be included here based on requirements -->
+    </element-def>
+
+    <!-- Contribution Links -->
+    <link-def>
+        <contribution name="Contribution1" description="Positive contribution to soft goal" srcid="10" destid="6" contributiontype="AND"/>
+        <contribution name="Contribution2" description="Positive contribution to soft goal" srcid="11" destid="6" contributiontype="AND"/>
+        <!-- Additional contribution links can be included here based on relationships -->
+    </link-def>
+
+    <!-- Dependency Links -->
+    <link-def>
+        <dependency name="Dependency1" description="Task depends on soft goal" dependerid="10" dependeeid="6"/>
+        <dependency name="Dependency2" description="Task depends on soft goal" dependerid="11" dependeeid="6"/>
+        <!-- Additional dependency links can be included here based on relationships -->
+    </link-def>
+</grl-catalog>

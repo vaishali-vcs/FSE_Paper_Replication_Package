@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grl-catalog catalog-name="UserStoriesCatalog" description="Catalog containing intentional elements and their relationships based on user stories" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="trainer" description="Stakeholder who creates and manages courses/events" type="Actor" decompositiontype="And"/>
+        <intentional-element id="2" name="show operations conducted" description="Display operations on the platform" type="Goal" decompositiontype="And"/>
+        <intentional-element id="3" name="notified operations conducted" description="Notify users of certain operations" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4" name="create operations conducted" description="Perform creation operations" type="Goal" decompositiontype="And"/>
+        <intentional-element id="5" name="load operations conducted" description="Load operations on the platform" type="Goal" decompositiontype="And"/>
+        <intentional-element id="6" name="show my rating" description="Display trainer's rating on the platform" type="Goal" decompositiontype="And"/>
+        <intentional-element id="7" name="notified the results" description="Notify users of results" type="Goal" decompositiontype="And"/>
+        <intentional-element id="8" name="an Excel file loaded" description="Load an Excel file on the platform" type="Goal" decompositiontype="And"/>
+        <intentional-element id="9" name="create an Other course" description="Create an alternative course or event" type="Goal" decompositiontype="And"/>
+        <intentional-element id="10" name="create a new course" description="Create a new course or event" type="Goal" decompositiontype="And"/>
+        <intentional-element id="11" name="Improve user engagement with course/event listings" description="Increase user interaction with course/event listings" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="12" name="Ensure accurate and up-to-date course/event information" description="Maintain correct course/event details" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="13" name="Increase membership retention through course/event visibility" description="Enhance member retention through course/event visibility" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="14" name="Minimize unnecessary course/event listings" description="Reduce unnecessary course/event listings" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="15" name="Enhance user experience in course/event management and registration" description="Improve user experience in course/event operations" type="Softgoal" decompositiontype="And"/>
+        <intentional-element id="16" name="Optimize platform performance for course/event operations" description="Enhance platform performance for course/event operations" type="Softgoal" decompositiontype="And"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="" srcid="11" destid="11" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution2" description="" srcid="11" destid="1" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <decomposition name="Decomposition1" description="" srcid="9" destid="1"/>
+        <decomposition name="Decomposition2" description="" srcid="10" destid="1"/>
+        <contribution name="Contribution3" description="" srcid="11" destid="11" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution4" description="" srcid="11" destid="2" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution5" description="" srcid="11" destid="3" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution6" description="" srcid="11" destid="4" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution7" description="" srcid="11" destid="5" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution8" description="" srcid="11" destid="6" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution9" description="" srcid="11" destid="7" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution10" description="" srcid="11" destid="8" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution11" description="" srcid="11" destid="9" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution12" description="" srcid="11" destid="10" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution13" description="" srcid="11" destid="11" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution14" description="" srcid="11" destid="12" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution15" description="" srcid="11" destid="13" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution16" description="" srcid="11" destid="14" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution17" description="" srcid="11" destid="15" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+        <contribution name="Contribution18" description="" srcid="11" destid="16" contributiontype="AND" quantitativeContribution="0" correlation="false"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="trainer" description="Stakeholder who creates and manages courses/events"/>
+        <actor id="2" name="site visitors" description="Users who browse and register for courses/events"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="11"/>
+        <actorContIE actor="2" ie="11"/>
+        <actorContIE actor="1" ie="12"/>
+        <actorContIE actor="1" ie="13"/>
+        <actorContIE actor="1" ie="14"/>
+        <actorContIE actor="1" ie="15"/>
+        <actorContIE actor="1" ie="16"/>
+    </actor-IE-link-def>
+</grl-catalog>

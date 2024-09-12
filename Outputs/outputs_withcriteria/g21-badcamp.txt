@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStoriesGRL" description="Goal-oriented Requirement Language model based on user stories" author="RequirementsEngineer">
+    <element-def>
+        <intentional-element id="1" name="Find a link to become a $350 level sponsor" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="2" name="See a list of attendees associated with a company" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="3" name="Register for the camp" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="4" name="Find session information" type="Goal" decompositiontype="AND"/>
+        <intentional-element id="5" name="Easily become a sponsor at the $350 level" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="6" name="Easily register for the camp" type="Softgoal" decompositiontype="AND"/>
+        <intentional-element id="7" name="Easily navigate the website to find required information" type="Softgoal" decompositiontype="AND"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" srcid="5" destid="1" contributiontype="HELP"/>
+        <contribution name="Contribution2" srcid="6" destid="3" contributiontype="HELP"/>
+        <contribution name="Contribution3" srcid="7" destid="4" contributiontype="HELP"/>
+        <decomposition name="Decomposition1" srcid="5" destid="1"/>
+        <decomposition name="Decomposition2" srcid="6" destid="3"/>
+        <decomposition name="Decomposition3" srcid="7" destid="4"/>
+    </link-def>
+    <actor-def>
+        <actor id="1" name="Authenticated User"/>
+        <actor id="2" name="Anonymous User"/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1" ie="5"/>
+        <actorContIE actor="2" ie="6"/>
+        <actorContIE actor="2" ie="7"/>
+    </actor-IE-link-def>
+</grl-catalog>

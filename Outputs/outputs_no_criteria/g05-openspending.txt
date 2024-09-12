@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="UserStorySpec" description="Catalog containing intentional elements and relationships from user stories" author="Requirements Engineer">
+    <element-def>
+        <intentional-element id="1" name="Platform Administrator" description="Stakeholder responsible for managing the platform" type="Actor"/>
+        <intentional-element id="2" name="Data Consuming User" description="User consuming data from the platform" type="Actor"/>
+        <intentional-element id="3" name="Data Publishing User" description="User publishing data to the platform" type="Actor"/>
+        <intentional-element id="4" name="API User" description="User interacting with the platform via API" type="Actor"/>
+        <intentional-element id="5" name="Hide any dataset already added as Public" description="Ability to hide datasets that were previously added as Public" type="Task"/>
+        <intentional-element id="6" name="Have a view on all datasets published by all users" description="Access to view all datasets published by any user on the platform" type="Task"/>
+        <intentional-element id="7" name="Delete any dataset published" description="Capability to delete any dataset that has been published on the platform" type="Task"/>
+        <intentional-element id="8" name="Understand if a user is a Publisher" description="Ability to determine if a user has Publisher privileges" type="Task"/>
+        <intentional-element id="9" name="Understand if a user is an Administrator" description="Ability to determine if a user has Administrator privileges" type="Task"/>
+        <intentional-element id="10" name="Change the colors of the embedded visualisations in own platform" description="Customize the colors of visualizations within the user's platform" type="Task"/>
+        <intentional-element id="11" name="Maintain Public/Hidden status for other users" description="Ensure the status of datasets remains accurate for other users" type="SoftGoal"/>
+        <intentional-element id="12" name="Perform management actions on any dataset" description="Ability to manage and take actions on any dataset on the platform" type="SoftGoal"/>
+        <intentional-element id="13" name="Deal with takedown requests or clean up test datasets" description="Handle takedown requests and clean up test datasets as needed" type="SoftGoal"/>
+        <intentional-element id="14" name="Offer functionality based on Dataset Publisher privileges" description="Provide specific functionality based on Dataset Publisher status" type="SoftGoal"/>
+        <intentional-element id="15" name="Offer functionality based on Platform Administration privileges" description="Provide specific functionality based on Platform Administration status" type="SoftGoal"/>
+        <intentional-element id="16" name="Customize the visualizations" description="Allow users to customize the visualizations according to their preferences" type="SoftGoal"/>
+    </element-def>
+    <link-def>
+        <contribution name="Contribution1" description="Platform Administrator helps in maintaining Public/Hidden status" srcid="1" destid="11" contributiontype="Help"/>
+        <contribution name="Contribution2" description="Platform Administrator helps in performing management actions" srcid="1" destid="12" contributiontype="Help"/>
+        <contribution name="Contribution3" description="Platform Administrator helps in handling takedown requests" srcid="1" destid="13" contributiontype="Help"/>
+        <contribution name="Contribution4" description="API User helps in identifying Dataset Publishers" srcid="4" destid="14" contributiontype="Help"/>
+        <contribution name="Contribution5" description="API User helps in identifying Administrators" srcid="4" destid="15" contributiontype="Help"/>
+        <contribution name="Contribution6" description="API User helps in customizing visualizations" srcid="4" destid="16" contributiontype="Make"/>
+        <dependency name="Dependency1" description="API User depends on Platform Administrator for changing visualization colors" dependerid="4" dependeeid="16"/>
+    </link-def>
+</grl-catalog>
